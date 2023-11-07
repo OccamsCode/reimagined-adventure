@@ -1,0 +1,6 @@
+{
+  "$type": "Tfl.Api.Presentation.Entities.ValidityPeriod, Tfl.Api.Presentation.Entities",
+  "fromDate": "2023-11-07T11:03:13Z",
+  "toDate": "2023-11-08T01:29:00Z",
+  "isNow": true
+}
