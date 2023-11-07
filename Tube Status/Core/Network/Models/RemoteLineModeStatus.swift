@@ -7,6 +7,24 @@
 
 import Foundation
 
+// MARK: - LineStatus
+struct LineStatus: Codable {
+    let type: String
+    let id, statusSeverity: Int
+    let statusSeverityDescription: String
+    let created: String
+    let validityPeriods: [ValidityPeriod]?
+    let lineID, reason: String
+    let disruption: Disruption?
+
+    enum CodingKeys: String, CodingKey {
+        case type = "$type"
+        case id, statusSeverity, statusSeverityDescription, created, validityPeriods
+        case lineID = "lineId"
+        case reason, disruption
+    }
+}
+
 // MARK: - Disruption
 struct Disruption: Codable {
     let type, category, categoryDescription, description, closureText: String

@@ -42,4 +42,18 @@ final class RemoteLineStatusTests: XCTestCase {
             XCTAssertEqual(model.closureText, "minorDelays")
         }
     }
+    
+    func testDecodingLineStatus() throws {
+        try decodeModel { (model: LineStatus) in
+            XCTAssertEqual(model.type, "Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities")
+            XCTAssertEqual(model.id, 0)
+            XCTAssertEqual(model.lineID, "central")
+            XCTAssertEqual(model.statusSeverity, 9)
+            XCTAssertEqual(model.statusSeverityDescription, "Minor Delays")
+            XCTAssertEqual(model.reason, "Central Line: Minor delays due to an earlier signal failure at St. Paul's. ")
+            XCTAssertEqual(model.created, "0001-01-01T00:00:00")
+            XCTAssertNotNil(model.validityPeriods)
+            XCTAssertNotNil(model.disruption)
+        }
+    }
 }

@@ -18,6 +18,7 @@
 		BA8A1D942AFAB38200DE7D09 /* ValidityPeriod.json in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1D932AFAB38200DE7D09 /* ValidityPeriod.json */; };
 		BA8A1D962AFAB5E100DE7D09 /* ServiceType.json in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1D952AFAB5E100DE7D09 /* ServiceType.json */; };
 		BA8A1D982AFAB73D00DE7D09 /* Disruption.json in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1D972AFAB73D00DE7D09 /* Disruption.json */; };
+		BA8A1D9A2AFAB8ED00DE7D09 /* LineStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1D992AFAB8ED00DE7D09 /* LineStatus.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		BA8A1D932AFAB38200DE7D09 /* ValidityPeriod.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ValidityPeriod.json; sourceTree = "<group>"; };
 		BA8A1D952AFAB5E100DE7D09 /* ServiceType.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ServiceType.json; sourceTree = "<group>"; };
 		BA8A1D972AFAB73D00DE7D09 /* Disruption.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Disruption.json; sourceTree = "<group>"; };
+		BA8A1D992AFAB8ED00DE7D09 /* LineStatus.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LineStatus.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				BA8A1D932AFAB38200DE7D09 /* ValidityPeriod.json */,
 				BA8A1D952AFAB5E100DE7D09 /* ServiceType.json */,
 				BA8A1D972AFAB73D00DE7D09 /* Disruption.json */,
+				BA8A1D992AFAB8ED00DE7D09 /* LineStatus.json */,
 			);
 			path = "JSON Objects";
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			files = (
 				BA8A1D982AFAB73D00DE7D09 /* Disruption.json in Resources */,
 				BA8A1D942AFAB38200DE7D09 /* ValidityPeriod.json in Resources */,
+				BA8A1D9A2AFAB8ED00DE7D09 /* LineStatus.json in Resources */,
 				BA8A1D962AFAB5E100DE7D09 /* ServiceType.json in Resources */,
 				BA8A1D902AFAB13B00DE7D09 /* Crowding.json in Resources */,
 			);
