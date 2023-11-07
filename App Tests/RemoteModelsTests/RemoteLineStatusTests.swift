@@ -32,4 +32,14 @@ final class RemoteLineStatusTests: XCTestCase {
             XCTAssertEqual(model.uri, "/Line/Route?ids=Central&serviceTypes=Night")
         }
     }
+    
+    func testDecodingDisruption() throws {
+        try decodeModel { (model: Disruption) in
+            XCTAssertEqual(model.type, "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities")
+            XCTAssertEqual(model.category, "RealTime")
+            XCTAssertEqual(model.categoryDescription, "RealTime")
+            XCTAssertEqual(model.description, "Central Line: Minor delays due to an earlier signal failure at St. Paul's. ")
+            XCTAssertEqual(model.closureText, "minorDelays")
+        }
+    }
 }

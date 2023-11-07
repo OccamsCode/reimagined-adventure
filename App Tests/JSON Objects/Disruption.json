@@ -1,0 +1,7 @@
+{
+  "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+  "category": "RealTime",
+  "categoryDescription": "RealTime",
+  "description": "Central Line: Minor delays due to an earlier signal failure at St. Paul's. ",
+  "closureText": "minorDelays"
+}

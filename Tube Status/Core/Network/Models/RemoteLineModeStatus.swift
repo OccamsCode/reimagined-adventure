@@ -7,6 +7,16 @@
 
 import Foundation
 
+// MARK: - Disruption
+struct Disruption: Codable {
+    let type, category, categoryDescription, description, closureText: String
+
+    enum CodingKeys: String, CodingKey {
+        case type = "$type"
+        case category, categoryDescription, description, closureText
+    }
+}
+
 // MARK: - ServiceType
 struct ServiceType: Codable {
     let type: String
