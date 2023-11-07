@@ -7,6 +7,18 @@
 
 import Foundation
 
+// MARK: - ServiceType
+struct ServiceType: Codable {
+    let type: String
+    let name: String
+    let uri: String
+
+    enum CodingKeys: String, CodingKey {
+        case type = "$type"
+        case name, uri
+    }
+}
+
 // MARK: - ValidityPeriod
 struct ValidityPeriod: Codable {
     let type: String
