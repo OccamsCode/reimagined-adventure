@@ -56,4 +56,18 @@ final class RemoteLineStatusTests: XCTestCase {
             XCTAssertNotNil(model.disruption)
         }
     }
+    
+    func testDecodingLineModeStatusElement() throws {
+        try decodeModel { (model: LineModeStatusElement) in
+            XCTAssertEqual(model.type, "Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities")
+            XCTAssertEqual(model.id, "central")
+            XCTAssertEqual(model.name, "Central")
+            XCTAssertEqual(model.modeName, "tube")
+            XCTAssertEqual(model.created, "2023-10-31T15:28:42.2Z")
+            XCTAssertEqual(model.modified, "2023-10-31T15:28:42.2Z")
+            XCTAssertNotNil(model.lineStatuses)
+            XCTAssertNotNil(model.serviceTypes)
+            XCTAssertNotNil(model.crowding)
+        }
+    }
 }

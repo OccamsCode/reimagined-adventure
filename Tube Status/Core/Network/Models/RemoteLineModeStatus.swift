@@ -7,6 +7,23 @@
 
 import Foundation
 
+typealias RemoteLineModeStatus = [LineModeStatusElement]
+
+// MARK: - RemoteLineModeStatusElement
+struct LineModeStatusElement: Codable {
+    let type, id, name, modeName: String
+    let disruptions: [Disruption]?
+    let created, modified: String
+    let lineStatuses: [LineStatus]?
+    let serviceTypes: [ServiceType]?
+    let crowding: Crowding?
+
+    enum CodingKeys: String, CodingKey {
+        case type = "$type"
+        case id, name, modeName, disruptions, created, modified, lineStatuses, serviceTypes, crowding
+    }
+}
+
 // MARK: - LineStatus
 struct LineStatus: Codable {
     let type: String
