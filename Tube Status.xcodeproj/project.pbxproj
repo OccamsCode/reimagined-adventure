@@ -30,6 +30,10 @@
 		BA8A1DB42AFBBD3300DE7D09 /* InjectedValues+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DB32AFBBD3300DE7D09 /* InjectedValues+Extension.swift */; };
 		BA8A1DB62AFBBF2C00DE7D09 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DB52AFBBF2C00DE7D09 /* Requests.swift */; };
 		BA8A1DC72AFBE17B00DE7D09 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DC62AFBE17B00DE7D09 /* Coordinator.swift */; };
+		BA8A1DC92AFBE28F00DE7D09 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DC82AFBE28F00DE7D09 /* AppCoordinator.swift */; };
+		BA8A1DCC2AFBE31200DE7D09 /* AppCordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DCB2AFBE31200DE7D09 /* AppCordinatorTests.swift */; };
+		BA8A1DD02AFBE4C100DE7D09 /* TubeStatusFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DCF2AFBE4C100DE7D09 /* TubeStatusFlowCoordinator.swift */; };
+		BA8A1DD22AFBE5BA00DE7D09 /* TubeStatusFlowCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DD12AFBE5BA00DE7D09 /* TubeStatusFlowCoordinatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		BA8A1DB52AFBBF2C00DE7D09 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		BA8A1DBA2AFBD27F00DE7D09 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		BA8A1DC62AFBE17B00DE7D09 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		BA8A1DC82AFBE28F00DE7D09 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		BA8A1DCB2AFBE31200DE7D09 /* AppCordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCordinatorTests.swift; sourceTree = "<group>"; };
+		BA8A1DCF2AFBE4C100DE7D09 /* TubeStatusFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeStatusFlowCoordinator.swift; sourceTree = "<group>"; };
+		BA8A1DD12AFBE5BA00DE7D09 /* TubeStatusFlowCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeStatusFlowCoordinatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +142,7 @@
 		BA8A1D772AFAA47300DE7D09 /* App Tests */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A1DCA2AFBE2F500DE7D09 /* CoordinatorTests */,
 				BA8A1D862AFAA8C200DE7D09 /* JSON Objects */,
 				BA8A1DA52AFBAEA900DE7D09 /* DomainModelTests */,
 				BA8A1D852AFAA86000DE7D09 /* RemoteModelsTests */,
@@ -253,8 +262,19 @@
 			isa = PBXGroup;
 			children = (
 				BA8A1DC62AFBE17B00DE7D09 /* Coordinator.swift */,
+				BA8A1DC82AFBE28F00DE7D09 /* AppCoordinator.swift */,
+				BA8A1DCF2AFBE4C100DE7D09 /* TubeStatusFlowCoordinator.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		BA8A1DCA2AFBE2F500DE7D09 /* CoordinatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1DCB2AFBE31200DE7D09 /* AppCordinatorTests.swift */,
+				BA8A1DD12AFBE5BA00DE7D09 /* TubeStatusFlowCoordinatorTests.swift */,
+			);
+			path = CoordinatorTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,7 +391,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA8A1DC92AFBE28F00DE7D09 /* AppCoordinator.swift in Sources */,
 				BA8A1DB02AFBBC9500DE7D09 /* TFLClient.swift in Sources */,
+				BA8A1DD02AFBE4C100DE7D09 /* TubeStatusFlowCoordinator.swift in Sources */,
 				BA8A1DA42AFBACCB00DE7D09 /* DomainMapper.swift in Sources */,
 				BA8A1DC72AFBE17B00DE7D09 /* Coordinator.swift in Sources */,
 				BA8A1D5E2AFA94F900DE7D09 /* AppDelegate.swift in Sources */,
@@ -388,7 +410,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA8A1DCC2AFBE31200DE7D09 /* AppCordinatorTests.swift in Sources */,
 				BA8A1D8C2AFAA98700DE7D09 /* RemoteLineStatusTests.swift in Sources */,
+				BA8A1DD22AFBE5BA00DE7D09 /* TubeStatusFlowCoordinatorTests.swift in Sources */,
 				BA8A1DA72AFBAED800DE7D09 /* DomainMapperTests.swift in Sources */,
 				BA8A1D842AFAA71E00DE7D09 /* XCTestCase+Extension.swift in Sources */,
 			);

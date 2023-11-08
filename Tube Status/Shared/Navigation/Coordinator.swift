@@ -7,11 +7,6 @@
 
 import Foundation
 
-enum Navigate {
-    case toArticle(Article)
-    case toPreview(Previewable)
-}
-
 protocol Coordinator: AnyObject {
     var childCoordinators: [Coordinator] { get set }
     func start()
