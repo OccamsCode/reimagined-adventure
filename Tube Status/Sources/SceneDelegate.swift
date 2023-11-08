@@ -6,10 +6,24 @@
 //
 
 import UIKit
+import Poppify
+import Injection
 
 class ArticleListViewController: UIViewController {
+    
+    @Injected(\.clientProvider) var client
+    
     override func viewDidAppear(_ animated: Bool) {
         view.backgroundColor = .magenta
+        
+        let request = LineModeStatusRequest(.tube)
+        
+        let resource = Resource<RemoteLineModeStatus>(request: request)
+        
+        let task = client.executeRequest(with: resource) { result in
+            print(result)
+        }
+        task?.resume()
     }
 }
 

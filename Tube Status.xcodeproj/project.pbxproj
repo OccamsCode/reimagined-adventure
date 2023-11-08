@@ -65,6 +65,7 @@
 		BA8A1DAF2AFBBC9500DE7D09 /* TFLClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFLClient.swift; sourceTree = "<group>"; };
 		BA8A1DB32AFBBD3300DE7D09 /* InjectedValues+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InjectedValues+Extension.swift"; sourceTree = "<group>"; };
 		BA8A1DB52AFBBF2C00DE7D09 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		BA8A1DBA2AFBD27F00DE7D09 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 		BA8A1D512AFA94F900DE7D09 = {
 			isa = PBXGroup;
 			children = (
+				BA8A1DBA2AFBD27F00DE7D09 /* Config.xcconfig */,
 				BA8A1D5C2AFA94F900DE7D09 /* Tube Status */,
 				BA8A1D772AFAA47300DE7D09 /* App Tests */,
 				BA8A1D5B2AFA94F900DE7D09 /* Products */,
@@ -396,6 +398,7 @@
 /* Begin XCBuildConfiguration section */
 		BA8A1D6C2AFA94FC00DE7D09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA8A1DBA2AFBD27F00DE7D09 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -456,6 +459,7 @@
 		};
 		BA8A1D6D2AFA94FC00DE7D09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA8A1DBA2AFBD27F00DE7D09 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -510,6 +514,7 @@
 		};
 		BA8A1D6F2AFA94FC00DE7D09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA8A1DBA2AFBD27F00DE7D09 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
