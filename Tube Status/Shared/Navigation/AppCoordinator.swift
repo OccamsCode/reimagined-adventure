@@ -11,13 +11,25 @@ import UIKit
 final class AppCoordinator: Coordinator {
     
     var childCoordinators: [Coordinator]
-    
+    let window: UIWindow
+
     init(_ window: UIWindow) {
-        childCoordinators = []
+        self.window = window
+        self.childCoordinators = []
     }
     
     func start() {
-        
+        let statusNavigationController = UINavigationController()
+        let tubeStatusFlow = TubeStatusFlowCoordinator(statusNavigationController)
+
+        tubeStatusFlow.start()
+
+        // store child coordinator
+        store(tubeStatusFlow)
+
+        // launch the window
+        window.rootViewController = statusNavigationController
+        window.makeKeyAndVisible()
     }
     
     deinit {
