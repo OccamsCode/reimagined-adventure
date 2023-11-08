@@ -44,6 +44,7 @@
 		BA8A1DEA2AFC1FD600DE7D09 /* TubeStatusRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DE92AFC1FD600DE7D09 /* TubeStatusRepositoryTests.swift */; };
 		BA8A1DEC2AFC205C00DE7D09 /* RemoteLineModeStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1DEB2AFC205C00DE7D09 /* RemoteLineModeStatus.json */; };
 		BA8A1DEF2AFC276A00DE7D09 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DEE2AFC276A00DE7D09 /* Mocks.swift */; };
+		BA8A1DF42AFC292B00DE7D09 /* TubeStatusViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DF32AFC292B00DE7D09 /* TubeStatusViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		BA8A1DE92AFC1FD600DE7D09 /* TubeStatusRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeStatusRepositoryTests.swift; sourceTree = "<group>"; };
 		BA8A1DEB2AFC205C00DE7D09 /* RemoteLineModeStatus.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RemoteLineModeStatus.json; sourceTree = "<group>"; };
 		BA8A1DEE2AFC276A00DE7D09 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		BA8A1DF32AFC292B00DE7D09 /* TubeStatusViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeStatusViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,6 +393,7 @@
 		BA8A1DF22AFC28DF00DE7D09 /* FeaturesTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A1DF32AFC292B00DE7D09 /* TubeStatusViewModelTests.swift */,
 			);
 			path = FeaturesTests;
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 				BA8A1DD22AFBE5BA00DE7D09 /* TubeStatusFlowCoordinatorTests.swift in Sources */,
 				BA8A1DDC2AFBF7E700DE7D09 /* TestingRootViewController.swift in Sources */,
 				BA8A1DD62AFBF21800DE7D09 /* TestingAppDelegate.swift in Sources */,
+				BA8A1DF42AFC292B00DE7D09 /* TubeStatusViewModelTests.swift in Sources */,
 				BA8A1DA72AFBAED800DE7D09 /* DomainMapperTests.swift in Sources */,
 				BA8A1DEF2AFC276A00DE7D09 /* Mocks.swift in Sources */,
 				BA8A1D842AFAA71E00DE7D09 /* XCTestCase+Extension.swift in Sources */,

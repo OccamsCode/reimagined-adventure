@@ -10,10 +10,29 @@ import Poppify
 
 final class TubeStatusViewModel {
     
-    @Injected(\.clientProvider) var client
     let repository: TubeStatusRepositoryProtocol
+    private var lineDetails: [LineDetails]
     
     init(_ repository: TubeStatusRepositoryProtocol) {
         self.repository = repository
+        self.lineDetails = []
     }
+    
+    func fetchAllStatus(_ completion: @escaping () -> Void) {
+        
+        repository.fetchTubeStatus { [unowned self] result in
+            switch result {
+            case .success(let success):
+                self.lineDetails = success
+            case .failure(let failure):
+                print(failure)
+            }
+            completion()
+        }
+    }
+    
+    var numberOfSections: Int {
+        return lineDetails.isEmpty ? 0 : 1
+    }
+    
 }
