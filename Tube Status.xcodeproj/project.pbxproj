@@ -164,14 +164,11 @@
 		BA8A1D772AFAA47300DE7D09 /* App Tests */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A1DF02AFC287E00DE7D09 /* CoreTests */,
+				BA8A1DF22AFC28DF00DE7D09 /* FeaturesTests */,
 				BA8A1DED2AFC275300DE7D09 /* Mocks */,
-				BA8A1DE82AFC1F9000DE7D09 /* RepositoryTests */,
 				BA8A1DD82AFBF77500DE7D09 /* TestingDelegate */,
-				BA8A1DCA2AFBE2F500DE7D09 /* CoordinatorTests */,
-				BA8A1D862AFAA8C200DE7D09 /* JSON Objects */,
-				BA8A1DA52AFBAEA900DE7D09 /* DomainModelTests */,
-				BA8A1D852AFAA86000DE7D09 /* RemoteModelsTests */,
-				BA8A1D832AFAA71E00DE7D09 /* XCTestCase+Extension.swift */,
+				BA8A1DF12AFC28A300DE7D09 /* SharedTests */,
 			);
 			path = "App Tests";
 			sourceTree = "<group>";
@@ -207,6 +204,7 @@
 		BA8A1D852AFAA86000DE7D09 /* RemoteModelsTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A1D832AFAA71E00DE7D09 /* XCTestCase+Extension.swift */,
 				BA8A1D8B2AFAA98700DE7D09 /* RemoteLineStatusTests.swift */,
 			);
 			path = RemoteModelsTests;
@@ -369,6 +367,32 @@
 				BA8A1DEE2AFC276A00DE7D09 /* Mocks.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		BA8A1DF02AFC287E00DE7D09 /* CoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1DE82AFC1F9000DE7D09 /* RepositoryTests */,
+				BA8A1D862AFAA8C200DE7D09 /* JSON Objects */,
+				BA8A1DA52AFBAEA900DE7D09 /* DomainModelTests */,
+				BA8A1D852AFAA86000DE7D09 /* RemoteModelsTests */,
+			);
+			path = CoreTests;
+			sourceTree = "<group>";
+		};
+		BA8A1DF12AFC28A300DE7D09 /* SharedTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1DCA2AFBE2F500DE7D09 /* CoordinatorTests */,
+			);
+			path = SharedTests;
+			sourceTree = "<group>";
+		};
+		BA8A1DF22AFC28DF00DE7D09 /* FeaturesTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FeaturesTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
