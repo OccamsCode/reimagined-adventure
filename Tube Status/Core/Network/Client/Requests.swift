@@ -10,7 +10,7 @@ import Poppify
 
 // MARK: - /Line/Mode/{modes}/Status
 struct LineModeStatusRequest: Requestable {
-    let path = "/Line/Mode/Tube/Status"
+    let path: String
     let parameters: [URLQueryItem]
     
     enum Mode: String {
