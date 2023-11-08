@@ -29,6 +29,15 @@
 		BA8A1DB02AFBBC9500DE7D09 /* TFLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DAF2AFBBC9500DE7D09 /* TFLClient.swift */; };
 		BA8A1DB42AFBBD3300DE7D09 /* InjectedValues+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DB32AFBBD3300DE7D09 /* InjectedValues+Extension.swift */; };
 		BA8A1DB62AFBBF2C00DE7D09 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DB52AFBBF2C00DE7D09 /* Requests.swift */; };
+		BA8A1DC72AFBE17B00DE7D09 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DC62AFBE17B00DE7D09 /* Coordinator.swift */; };
+		BA8A1DC92AFBE28F00DE7D09 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DC82AFBE28F00DE7D09 /* AppCoordinator.swift */; };
+		BA8A1DCC2AFBE31200DE7D09 /* AppCordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DCB2AFBE31200DE7D09 /* AppCordinatorTests.swift */; };
+		BA8A1DD02AFBE4C100DE7D09 /* TubeStatusFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DCF2AFBE4C100DE7D09 /* TubeStatusFlowCoordinator.swift */; };
+		BA8A1DD22AFBE5BA00DE7D09 /* TubeStatusFlowCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DD12AFBE5BA00DE7D09 /* TubeStatusFlowCoordinatorTests.swift */; };
+		BA8A1DD62AFBF21800DE7D09 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DD52AFBF21800DE7D09 /* TestingAppDelegate.swift */; };
+		BA8A1DD72AFBF5CF00DE7D09 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DD32AFBF19F00DE7D09 /* main.swift */; };
+		BA8A1DDA2AFBF7AF00DE7D09 /* TestingSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DD92AFBF7AF00DE7D09 /* TestingSceneDelegate.swift */; };
+		BA8A1DDC2AFBF7E700DE7D09 /* TestingRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DDB2AFBF7E700DE7D09 /* TestingRootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +75,15 @@
 		BA8A1DB32AFBBD3300DE7D09 /* InjectedValues+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InjectedValues+Extension.swift"; sourceTree = "<group>"; };
 		BA8A1DB52AFBBF2C00DE7D09 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		BA8A1DBA2AFBD27F00DE7D09 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		BA8A1DC62AFBE17B00DE7D09 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		BA8A1DC82AFBE28F00DE7D09 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		BA8A1DCB2AFBE31200DE7D09 /* AppCordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCordinatorTests.swift; sourceTree = "<group>"; };
+		BA8A1DCF2AFBE4C100DE7D09 /* TubeStatusFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeStatusFlowCoordinator.swift; sourceTree = "<group>"; };
+		BA8A1DD12AFBE5BA00DE7D09 /* TubeStatusFlowCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeStatusFlowCoordinatorTests.swift; sourceTree = "<group>"; };
+		BA8A1DD32AFBF19F00DE7D09 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BA8A1DD52AFBF21800DE7D09 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
+		BA8A1DD92AFBF7AF00DE7D09 /* TestingSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingSceneDelegate.swift; sourceTree = "<group>"; };
+		BA8A1DDB2AFBF7E700DE7D09 /* TestingRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingRootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +128,7 @@
 		BA8A1D5C2AFA94F900DE7D09 /* Tube Status */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A1DC42AFBE13C00DE7D09 /* Shared */,
 				BA8A1D802AFAA5C300DE7D09 /* Core */,
 				BA8A1D712AFA968600DE7D09 /* Sources */,
 			);
@@ -124,6 +143,7 @@
 				BA8A1D662AFA94FC00DE7D09 /* Assets.xcassets */,
 				BA8A1D682AFA94FC00DE7D09 /* LaunchScreen.storyboard */,
 				BA8A1D6B2AFA94FC00DE7D09 /* Info.plist */,
+				BA8A1DD32AFBF19F00DE7D09 /* main.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -131,6 +151,8 @@
 		BA8A1D772AFAA47300DE7D09 /* App Tests */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A1DD82AFBF77500DE7D09 /* TestingDelegate */,
+				BA8A1DCA2AFBE2F500DE7D09 /* CoordinatorTests */,
 				BA8A1D862AFAA8C200DE7D09 /* JSON Objects */,
 				BA8A1DA52AFBAEA900DE7D09 /* DomainModelTests */,
 				BA8A1D852AFAA86000DE7D09 /* RemoteModelsTests */,
@@ -236,6 +258,43 @@
 				BA8A1DB32AFBBD3300DE7D09 /* InjectedValues+Extension.swift */,
 			);
 			path = Injection;
+			sourceTree = "<group>";
+		};
+		BA8A1DC42AFBE13C00DE7D09 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1DC52AFBE14100DE7D09 /* Navigation */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BA8A1DC52AFBE14100DE7D09 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1DC62AFBE17B00DE7D09 /* Coordinator.swift */,
+				BA8A1DC82AFBE28F00DE7D09 /* AppCoordinator.swift */,
+				BA8A1DCF2AFBE4C100DE7D09 /* TubeStatusFlowCoordinator.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		BA8A1DCA2AFBE2F500DE7D09 /* CoordinatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1DCB2AFBE31200DE7D09 /* AppCordinatorTests.swift */,
+				BA8A1DD12AFBE5BA00DE7D09 /* TubeStatusFlowCoordinatorTests.swift */,
+			);
+			path = CoordinatorTests;
+			sourceTree = "<group>";
+		};
+		BA8A1DD82AFBF77500DE7D09 /* TestingDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1DD52AFBF21800DE7D09 /* TestingAppDelegate.swift */,
+				BA8A1DD92AFBF7AF00DE7D09 /* TestingSceneDelegate.swift */,
+				BA8A1DDB2AFBF7E700DE7D09 /* TestingRootViewController.swift */,
+			);
+			path = TestingDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,8 +411,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA8A1DC92AFBE28F00DE7D09 /* AppCoordinator.swift in Sources */,
+				BA8A1DD72AFBF5CF00DE7D09 /* main.swift in Sources */,
 				BA8A1DB02AFBBC9500DE7D09 /* TFLClient.swift in Sources */,
+				BA8A1DD02AFBE4C100DE7D09 /* TubeStatusFlowCoordinator.swift in Sources */,
 				BA8A1DA42AFBACCB00DE7D09 /* DomainMapper.swift in Sources */,
+				BA8A1DC72AFBE17B00DE7D09 /* Coordinator.swift in Sources */,
 				BA8A1D5E2AFA94F900DE7D09 /* AppDelegate.swift in Sources */,
 				BA8A1DB62AFBBF2C00DE7D09 /* Requests.swift in Sources */,
 				BA8A1D8E2AFAACEA00DE7D09 /* RemoteLineModeStatus.swift in Sources */,
@@ -368,9 +431,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA8A1DCC2AFBE31200DE7D09 /* AppCordinatorTests.swift in Sources */,
 				BA8A1D8C2AFAA98700DE7D09 /* RemoteLineStatusTests.swift in Sources */,
+				BA8A1DD22AFBE5BA00DE7D09 /* TubeStatusFlowCoordinatorTests.swift in Sources */,
+				BA8A1DDC2AFBF7E700DE7D09 /* TestingRootViewController.swift in Sources */,
+				BA8A1DD62AFBF21800DE7D09 /* TestingAppDelegate.swift in Sources */,
 				BA8A1DA72AFBAED800DE7D09 /* DomainMapperTests.swift in Sources */,
 				BA8A1D842AFAA71E00DE7D09 /* XCTestCase+Extension.swift in Sources */,
+				BA8A1DDA2AFBF7AF00DE7D09 /* TestingSceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
