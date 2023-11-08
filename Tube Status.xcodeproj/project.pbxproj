@@ -24,6 +24,11 @@
 		BA8A1DA22AFBAB3200DE7D09 /* LineStatusDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DA12AFBAB3200DE7D09 /* LineStatusDetails.swift */; };
 		BA8A1DA42AFBACCB00DE7D09 /* DomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DA32AFBACCB00DE7D09 /* DomainMapper.swift */; };
 		BA8A1DA72AFBAED800DE7D09 /* DomainMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DA62AFBAED800DE7D09 /* DomainMapperTests.swift */; };
+		BA8A1DAA2AFBB65200DE7D09 /* Poppify in Frameworks */ = {isa = PBXBuildFile; productRef = BA8A1DA92AFBB65200DE7D09 /* Poppify */; };
+		BA8A1DAD2AFBB66400DE7D09 /* Injection in Frameworks */ = {isa = PBXBuildFile; productRef = BA8A1DAC2AFBB66400DE7D09 /* Injection */; };
+		BA8A1DB02AFBBC9500DE7D09 /* TFLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DAF2AFBBC9500DE7D09 /* TFLClient.swift */; };
+		BA8A1DB42AFBBD3300DE7D09 /* InjectedValues+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DB32AFBBD3300DE7D09 /* InjectedValues+Extension.swift */; };
+		BA8A1DB62AFBBF2C00DE7D09 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DB52AFBBF2C00DE7D09 /* Requests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,9 @@
 		BA8A1DA12AFBAB3200DE7D09 /* LineStatusDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineStatusDetails.swift; sourceTree = "<group>"; };
 		BA8A1DA32AFBACCB00DE7D09 /* DomainMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainMapper.swift; sourceTree = "<group>"; };
 		BA8A1DA62AFBAED800DE7D09 /* DomainMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainMapperTests.swift; sourceTree = "<group>"; };
+		BA8A1DAF2AFBBC9500DE7D09 /* TFLClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFLClient.swift; sourceTree = "<group>"; };
+		BA8A1DB32AFBBD3300DE7D09 /* InjectedValues+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InjectedValues+Extension.swift"; sourceTree = "<group>"; };
+		BA8A1DB52AFBBF2C00DE7D09 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA8A1DAD2AFBB66400DE7D09 /* Injection in Frameworks */,
+				BA8A1DAA2AFBB65200DE7D09 /* Poppify in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +140,7 @@
 		BA8A1D802AFAA5C300DE7D09 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A1DB12AFBBD0500DE7D09 /* Utilities */,
 				BA8A1D9D2AFBA90000DE7D09 /* Domain */,
 				BA8A1D812AFAA5CC00DE7D09 /* Network */,
 			);
@@ -139,6 +150,7 @@
 		BA8A1D812AFAA5CC00DE7D09 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A1DAE2AFBBC6A00DE7D09 /* Client */,
 				BA8A1D822AFAA5DC00DE7D09 /* Models */,
 			);
 			path = Network;
@@ -199,6 +211,31 @@
 			path = DomainModelTests;
 			sourceTree = "<group>";
 		};
+		BA8A1DAE2AFBBC6A00DE7D09 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1DAF2AFBBC9500DE7D09 /* TFLClient.swift */,
+				BA8A1DB52AFBBF2C00DE7D09 /* Requests.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		BA8A1DB12AFBBD0500DE7D09 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1DB22AFBBD1300DE7D09 /* Injection */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BA8A1DB22AFBBD1300DE7D09 /* Injection */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1DB32AFBBD3300DE7D09 /* InjectedValues+Extension.swift */,
+			);
+			path = Injection;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,6 +252,10 @@
 			dependencies = (
 			);
 			name = "Tube Status";
+			packageProductDependencies = (
+				BA8A1DA92AFBB65200DE7D09 /* Poppify */,
+				BA8A1DAC2AFBB66400DE7D09 /* Injection */,
+			);
 			productName = "Tube Status";
 			productReference = BA8A1D5A2AFA94F900DE7D09 /* Tube Status.app */;
 			productType = "com.apple.product-type.application";
@@ -265,6 +306,10 @@
 				Base,
 			);
 			mainGroup = BA8A1D512AFA94F900DE7D09;
+			packageReferences = (
+				BA8A1DA82AFBB65200DE7D09 /* XCRemoteSwiftPackageReference "Poppify" */,
+				BA8A1DAB2AFBB66400DE7D09 /* XCRemoteSwiftPackageReference "Injection" */,
+			);
 			productRefGroup = BA8A1D5B2AFA94F900DE7D09 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -305,12 +350,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA8A1DB02AFBBC9500DE7D09 /* TFLClient.swift in Sources */,
 				BA8A1DA42AFBACCB00DE7D09 /* DomainMapper.swift in Sources */,
 				BA8A1D5E2AFA94F900DE7D09 /* AppDelegate.swift in Sources */,
+				BA8A1DB62AFBBF2C00DE7D09 /* Requests.swift in Sources */,
 				BA8A1D8E2AFAACEA00DE7D09 /* RemoteLineModeStatus.swift in Sources */,
 				BA8A1DA02AFBA9B600DE7D09 /* LineDetails.swift in Sources */,
 				BA8A1D602AFA94F900DE7D09 /* SceneDelegate.swift in Sources */,
 				BA8A1DA22AFBAB3200DE7D09 /* LineStatusDetails.swift in Sources */,
+				BA8A1DB42AFBBD3300DE7D09 /* InjectedValues+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +641,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA8A1DA82AFBB65200DE7D09 /* XCRemoteSwiftPackageReference "Poppify" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OccamsCode/Poppify";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		BA8A1DAB2AFBB66400DE7D09 /* XCRemoteSwiftPackageReference "Injection" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OccamsCode/Injection";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA8A1DA92AFBB65200DE7D09 /* Poppify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA8A1DA82AFBB65200DE7D09 /* XCRemoteSwiftPackageReference "Poppify" */;
+			productName = Poppify;
+		};
+		BA8A1DAC2AFBB66400DE7D09 /* Injection */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA8A1DAB2AFBB66400DE7D09 /* XCRemoteSwiftPackageReference "Injection" */;
+			productName = Injection;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BA8A1D522AFA94F900DE7D09 /* Project object */;
 }
