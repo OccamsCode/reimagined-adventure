@@ -55,6 +55,34 @@ final class TubeStatusViewModelTests: XCTestCase {
         
         XCTAssertEqual(result, 1)
     }
+    
+    func testInitialViewModel_numberOfItemInSectionZero_isZero() {
+        
+        let result = sut.numberOfItems(inSection: 0)
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func testInitialViewModel_numberOfItemInSectionNegative_isZero() {
+        
+        let result = sut.numberOfItems(inSection: -1)
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func testInitialViewModel_numberOfItemInSectionOne_isZero() {
+        
+        let result = sut.numberOfItems(inSection: 1)
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func testInitialViewModel_numberOfItemInSectionThree_isZero() {
+        
+        let result = sut.numberOfItems(inSection: 3)
+        
+        XCTAssertEqual(result, 0)
+    }
 
 }
 

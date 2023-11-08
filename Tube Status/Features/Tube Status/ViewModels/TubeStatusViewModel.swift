@@ -35,4 +35,7 @@ final class TubeStatusViewModel {
         return lineDetails.isEmpty ? 0 : 1
     }
     
+    func numberOfItems(inSection section: Int) -> Int {
+        return 0
+    }
 }
