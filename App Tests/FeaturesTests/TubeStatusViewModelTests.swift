@@ -20,6 +20,7 @@ final class TubeStatusViewModelTests: XCTestCase {
 
     override func tearDown() {
         sut = nil
+        respository = nil
     }
     
     func testInitialViewModel_numberOfSection_isZero() {
