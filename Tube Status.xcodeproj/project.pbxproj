@@ -29,6 +29,7 @@
 		BA8A1DB02AFBBC9500DE7D09 /* TFLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DAF2AFBBC9500DE7D09 /* TFLClient.swift */; };
 		BA8A1DB42AFBBD3300DE7D09 /* InjectedValues+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DB32AFBBD3300DE7D09 /* InjectedValues+Extension.swift */; };
 		BA8A1DB62AFBBF2C00DE7D09 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DB52AFBBF2C00DE7D09 /* Requests.swift */; };
+		BA8A1DC72AFBE17B00DE7D09 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DC62AFBE17B00DE7D09 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		BA8A1DB32AFBBD3300DE7D09 /* InjectedValues+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InjectedValues+Extension.swift"; sourceTree = "<group>"; };
 		BA8A1DB52AFBBF2C00DE7D09 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		BA8A1DBA2AFBD27F00DE7D09 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		BA8A1DC62AFBE17B00DE7D09 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		BA8A1D5C2AFA94F900DE7D09 /* Tube Status */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A1DC42AFBE13C00DE7D09 /* Shared */,
 				BA8A1D802AFAA5C300DE7D09 /* Core */,
 				BA8A1D712AFA968600DE7D09 /* Sources */,
 			);
@@ -238,6 +241,22 @@
 			path = Injection;
 			sourceTree = "<group>";
 		};
+		BA8A1DC42AFBE13C00DE7D09 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1DC52AFBE14100DE7D09 /* Navigation */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BA8A1DC52AFBE14100DE7D09 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1DC62AFBE17B00DE7D09 /* Coordinator.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -354,6 +373,7 @@
 			files = (
 				BA8A1DB02AFBBC9500DE7D09 /* TFLClient.swift in Sources */,
 				BA8A1DA42AFBACCB00DE7D09 /* DomainMapper.swift in Sources */,
+				BA8A1DC72AFBE17B00DE7D09 /* Coordinator.swift in Sources */,
 				BA8A1D5E2AFA94F900DE7D09 /* AppDelegate.swift in Sources */,
 				BA8A1DB62AFBBF2C00DE7D09 /* Requests.swift in Sources */,
 				BA8A1D8E2AFAACEA00DE7D09 /* RemoteLineModeStatus.swift in Sources */,
