@@ -20,6 +20,10 @@
 		BA8A1D982AFAB73D00DE7D09 /* Disruption.json in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1D972AFAB73D00DE7D09 /* Disruption.json */; };
 		BA8A1D9A2AFAB8ED00DE7D09 /* LineStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1D992AFAB8ED00DE7D09 /* LineStatus.json */; };
 		BA8A1D9C2AFABABC00DE7D09 /* LineModeStatusElement.json in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1D9B2AFABABC00DE7D09 /* LineModeStatusElement.json */; };
+		BA8A1DA02AFBA9B600DE7D09 /* LineDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1D9F2AFBA9B600DE7D09 /* LineDetails.swift */; };
+		BA8A1DA22AFBAB3200DE7D09 /* LineStatusDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DA12AFBAB3200DE7D09 /* LineStatusDetails.swift */; };
+		BA8A1DA42AFBACCB00DE7D09 /* DomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DA32AFBACCB00DE7D09 /* DomainMapper.swift */; };
+		BA8A1DA72AFBAED800DE7D09 /* DomainMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DA62AFBAED800DE7D09 /* DomainMapperTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		BA8A1D972AFAB73D00DE7D09 /* Disruption.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Disruption.json; sourceTree = "<group>"; };
 		BA8A1D992AFAB8ED00DE7D09 /* LineStatus.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LineStatus.json; sourceTree = "<group>"; };
 		BA8A1D9B2AFABABC00DE7D09 /* LineModeStatusElement.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LineModeStatusElement.json; sourceTree = "<group>"; };
+		BA8A1D9F2AFBA9B600DE7D09 /* LineDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDetails.swift; sourceTree = "<group>"; };
+		BA8A1DA12AFBAB3200DE7D09 /* LineStatusDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineStatusDetails.swift; sourceTree = "<group>"; };
+		BA8A1DA32AFBACCB00DE7D09 /* DomainMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainMapper.swift; sourceTree = "<group>"; };
+		BA8A1DA62AFBAED800DE7D09 /* DomainMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainMapperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				BA8A1D862AFAA8C200DE7D09 /* JSON Objects */,
+				BA8A1DA52AFBAEA900DE7D09 /* DomainModelTests */,
 				BA8A1D852AFAA86000DE7D09 /* RemoteModelsTests */,
 				BA8A1D832AFAA71E00DE7D09 /* XCTestCase+Extension.swift */,
 			);
@@ -121,6 +130,7 @@
 		BA8A1D802AFAA5C300DE7D09 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A1D9D2AFBA90000DE7D09 /* Domain */,
 				BA8A1D812AFAA5CC00DE7D09 /* Network */,
 			);
 			path = Core;
@@ -161,6 +171,32 @@
 				BA8A1D9B2AFABABC00DE7D09 /* LineModeStatusElement.json */,
 			);
 			path = "JSON Objects";
+			sourceTree = "<group>";
+		};
+		BA8A1D9D2AFBA90000DE7D09 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1D9E2AFBA96600DE7D09 /* Models */,
+				BA8A1DA32AFBACCB00DE7D09 /* DomainMapper.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		BA8A1D9E2AFBA96600DE7D09 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1D9F2AFBA9B600DE7D09 /* LineDetails.swift */,
+				BA8A1DA12AFBAB3200DE7D09 /* LineStatusDetails.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA8A1DA52AFBAEA900DE7D09 /* DomainModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1DA62AFBAED800DE7D09 /* DomainMapperTests.swift */,
+			);
+			path = DomainModelTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,9 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA8A1DA42AFBACCB00DE7D09 /* DomainMapper.swift in Sources */,
 				BA8A1D5E2AFA94F900DE7D09 /* AppDelegate.swift in Sources */,
 				BA8A1D8E2AFAACEA00DE7D09 /* RemoteLineModeStatus.swift in Sources */,
+				BA8A1DA02AFBA9B600DE7D09 /* LineDetails.swift in Sources */,
 				BA8A1D602AFA94F900DE7D09 /* SceneDelegate.swift in Sources */,
+				BA8A1DA22AFBAB3200DE7D09 /* LineStatusDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA8A1D8C2AFAA98700DE7D09 /* RemoteLineStatusTests.swift in Sources */,
+				BA8A1DA72AFBAED800DE7D09 /* DomainMapperTests.swift in Sources */,
 				BA8A1D842AFAA71E00DE7D09 /* XCTestCase+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

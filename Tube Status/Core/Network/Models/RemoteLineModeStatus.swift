@@ -31,7 +31,7 @@ struct LineStatus: Codable {
     let statusSeverityDescription: String
     let created: String
     let validityPeriods: [ValidityPeriod]?
-    let lineID, reason: String
+    let lineID, reason: String?
     let disruption: Disruption?
 
     enum CodingKeys: String, CodingKey {
