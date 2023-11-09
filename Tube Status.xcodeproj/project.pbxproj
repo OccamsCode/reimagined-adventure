@@ -343,6 +343,8 @@
 		BA8A1DDF2AFBFBFC00DE7D09 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A1DF52AFD071400DE7D09 /* TubeStatusTableViewCell.swift */,
+				BA8A1DF62AFD071400DE7D09 /* TubeStatusTableViewCell.xib */,
 				BA8A1DE12AFBFC3A00DE7D09 /* TubeStatusTableViewController.swift */,
 			);
 			path = Views;
@@ -352,8 +354,6 @@
 			isa = PBXGroup;
 			children = (
 				BA8A1DE32AFBFC9C00DE7D09 /* TubeStatusViewModel.swift */,
-				BA8A1DF52AFD071400DE7D09 /* TubeStatusTableViewCell.swift */,
-				BA8A1DF62AFD071400DE7D09 /* TubeStatusTableViewCell.xib */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";

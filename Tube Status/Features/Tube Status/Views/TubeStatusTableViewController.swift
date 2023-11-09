@@ -15,7 +15,13 @@ class TubeStatusTableViewController: UITableViewController {
         super.viewDidLoad()
 
         precondition(viewModel != nil, "You forgot to attach a ViewModel")
+        tableView.register(cellType: TubeStatusTableViewCell.self)
 
+        viewModel.fetchAllStatus {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
 
     // MARK: - Table view data source
@@ -27,4 +33,10 @@ class TubeStatusTableViewController: UITableViewController {
         return viewModel.numberOfItems(inSection: section)
     }
 
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(with: TubeStatusTableViewCell.self, for: indexPath)
+        guard let model = viewModel.object(at: indexPath) else { return cell }
+        cell.update(using: model)
+        return cell
+    }
 }

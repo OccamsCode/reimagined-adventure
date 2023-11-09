@@ -15,13 +15,15 @@ class TubeStatusTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        tubeNameLabel.text = nil
+        tubeStatusLabel.text = nil
     }
     
     func update(using model: LineDetails) {
         
         tubeNameLabel.text = model.name
-        tubeStatusLabel.text = model.name
-        
+        tubeStatusLabel.text = model.lineStatus
+            .map { $0.reason ?? $0.statusSeverityDescription }
+            .joined(separator: "\n")
     }
 }
