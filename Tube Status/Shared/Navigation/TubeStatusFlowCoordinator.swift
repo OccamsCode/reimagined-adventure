@@ -20,10 +20,13 @@ final class TubeStatusFlowCoordinator: Coordinator {
 
     func start() {
         // Create ViewController
-        let view = UIViewController()
-        view.view.backgroundColor = .magenta
+        let view = TubeStatusTableViewController()
         
         // Create ViewModel
+        let respository = TubeStatusRepository()
+        let viewModel = TubeStatusViewModel(respository)
+        
+        view.viewModel = viewModel
         
         // Assign ViewModel to ViewController
         navigation.setViewControllers([view], animated: false)
