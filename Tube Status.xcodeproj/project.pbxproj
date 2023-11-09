@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA75F1952AFD2F8700D30FF3 /* TubeLineColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75F1942AFD2F8700D30FF3 /* TubeLineColorTests.swift */; };
 		BA8A1D5E2AFA94F900DE7D09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1D5D2AFA94F900DE7D09 /* AppDelegate.swift */; };
 		BA8A1D602AFA94F900DE7D09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1D5F2AFA94F900DE7D09 /* SceneDelegate.swift */; };
 		BA8A1D672AFA94FC00DE7D09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1D662AFA94FC00DE7D09 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		BA8A1DF82AFD071400DE7D09 /* TubeStatusTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1DF62AFD071400DE7D09 /* TubeStatusTableViewCell.xib */; };
 		BA8A1DFB2AFD0B2900DE7D09 /* ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DFA2AFD0B2900DE7D09 /* ClassName.swift */; };
 		BA8A1DFD2AFD0B6700DE7D09 /* TableViewCellReuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DFC2AFD0B6700DE7D09 /* TableViewCellReuse.swift */; };
+		BA8A1E002AFD2D2100DE7D09 /* TubeLineColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DFF2AFD2D2100DE7D09 /* TubeLineColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA75F1942AFD2F8700D30FF3 /* TubeLineColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeLineColorTests.swift; sourceTree = "<group>"; };
 		BA8A1D5A2AFA94F900DE7D09 /* Tube Status.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tube Status.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8A1D5D2AFA94F900DE7D09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA8A1D5F2AFA94F900DE7D09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +109,7 @@
 		BA8A1DF62AFD071400DE7D09 /* TubeStatusTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TubeStatusTableViewCell.xib; sourceTree = "<group>"; };
 		BA8A1DFA2AFD0B2900DE7D09 /* ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassName.swift; sourceTree = "<group>"; };
 		BA8A1DFC2AFD0B6700DE7D09 /* TableViewCellReuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellReuse.swift; sourceTree = "<group>"; };
+		BA8A1DFF2AFD2D2100DE7D09 /* TubeLineColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeLineColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA75F1932AFD2F6C00D30FF3 /* DesignSystemTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA75F1942AFD2F8700D30FF3 /* TubeLineColorTests.swift */,
+			);
+			path = DesignSystemTests;
+			sourceTree = "<group>";
+		};
 		BA8A1D512AFA94F900DE7D09 = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +301,7 @@
 		BA8A1DC42AFBE13C00DE7D09 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A1DFE2AFD17D400DE7D09 /* Design System */,
 				BA8A1DC52AFBE14100DE7D09 /* Navigation */,
 			);
 			path = Shared;
@@ -396,6 +409,7 @@
 		BA8A1DF12AFC28A300DE7D09 /* SharedTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA75F1932AFD2F6C00D30FF3 /* DesignSystemTests */,
 				BA8A1DCA2AFBE2F500DE7D09 /* CoordinatorTests */,
 			);
 			path = SharedTests;
@@ -416,6 +430,14 @@
 				BA8A1DFC2AFD0B6700DE7D09 /* TableViewCellReuse.swift */,
 			);
 			path = TableViewCellReusable;
+			sourceTree = "<group>";
+		};
+		BA8A1DFE2AFD17D400DE7D09 /* Design System */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1DFF2AFD2D2100DE7D09 /* TubeLineColor.swift */,
+			);
+			path = "Design System";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -539,6 +561,7 @@
 				BA8A1DD72AFBF5CF00DE7D09 /* main.swift in Sources */,
 				BA8A1DB02AFBBC9500DE7D09 /* TFLClient.swift in Sources */,
 				BA8A1DD02AFBE4C100DE7D09 /* TubeStatusFlowCoordinator.swift in Sources */,
+				BA8A1E002AFD2D2100DE7D09 /* TubeLineColor.swift in Sources */,
 				BA8A1DE42AFBFC9C00DE7D09 /* TubeStatusViewModel.swift in Sources */,
 				BA8A1DA42AFBACCB00DE7D09 /* DomainMapper.swift in Sources */,
 				BA8A1DF72AFD071400DE7D09 /* TubeStatusTableViewCell.swift in Sources */,
@@ -565,6 +588,7 @@
 				BA8A1DD22AFBE5BA00DE7D09 /* TubeStatusFlowCoordinatorTests.swift in Sources */,
 				BA8A1DDC2AFBF7E700DE7D09 /* TestingRootViewController.swift in Sources */,
 				BA8A1DD62AFBF21800DE7D09 /* TestingAppDelegate.swift in Sources */,
+				BA75F1952AFD2F8700D30FF3 /* TubeLineColorTests.swift in Sources */,
 				BA8A1DF42AFC292B00DE7D09 /* TubeStatusViewModelTests.swift in Sources */,
 				BA8A1DA72AFBAED800DE7D09 /* DomainMapperTests.swift in Sources */,
 				BA8A1DEF2AFC276A00DE7D09 /* Mocks.swift in Sources */,
