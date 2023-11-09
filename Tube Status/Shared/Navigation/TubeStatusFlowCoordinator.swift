@@ -23,6 +23,10 @@ final class TubeStatusFlowCoordinator: Coordinator {
         let view = TubeStatusTableViewController()
         
         // Create ViewModel
+        let respository = TubeStatusRepository()
+        let viewModel = TubeStatusViewModel(respository)
+        
+        view.viewModel = viewModel
         
         // Assign ViewModel to ViewController
         navigation.setViewControllers([view], animated: false)
