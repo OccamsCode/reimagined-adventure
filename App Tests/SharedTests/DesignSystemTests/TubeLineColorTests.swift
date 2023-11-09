@@ -15,7 +15,7 @@ final class TubeLineColorTests: XCTestCase {
         let identification = "bakerloo"
         let result = UIColor.lineColor(id: identification)
         
-        XCTAssertEqual(result, UIColor(rgb: 0x894D24))
+        XCTAssertEqual(result, UIColor(named: identification))
     }
     
     func testCentralID_lineColor_isCorect() {
@@ -23,7 +23,7 @@ final class TubeLineColorTests: XCTestCase {
         let identification = "central"
         let result = UIColor.lineColor(id: identification)
         
-        XCTAssertEqual(result, UIColor(rgb: 0xCA392D))
+        XCTAssertEqual(result, UIColor(named: identification))
     }
     
     func testCircleID_lineColor_isCorect() {
@@ -31,7 +31,7 @@ final class TubeLineColorTests: XCTestCase {
         let identification = "circle"
         let result = UIColor.lineColor(id: identification)
         
-        XCTAssertEqual(result, UIColor(rgb: 0xF7D046))
+        XCTAssertEqual(result, UIColor(named: identification))
     }
     
     func testDistrictID_lineColor_isCorect() {
@@ -39,7 +39,7 @@ final class TubeLineColorTests: XCTestCase {
         let identification = "district"
         let result = UIColor.lineColor(id: identification)
         
-        XCTAssertEqual(result, UIColor(rgb: 0x307033))
+        XCTAssertEqual(result, UIColor(named: identification))
     }
     
     func testHammersmithAndCityID_lineColor_isCorect() {
@@ -47,7 +47,7 @@ final class TubeLineColorTests: XCTestCase {
         let identification = "hammersmith-city"
         let result = UIColor.lineColor(id: identification)
         
-        XCTAssertEqual(result, UIColor(rgb: 0xCD9BAE))
+        XCTAssertEqual(result, UIColor(named: identification))
     }
     
     func testJubileeID_lineColor_isCorect() {
@@ -55,7 +55,7 @@ final class TubeLineColorTests: XCTestCase {
         let identification = "jubilee"
         let result = UIColor.lineColor(id: identification)
         
-        XCTAssertEqual(result, UIColor(rgb: 0x888E96))
+        XCTAssertEqual(result, UIColor(named: identification))
     }
     
     func testMetropolitan_lineColor_isCorect() {
@@ -63,7 +63,7 @@ final class TubeLineColorTests: XCTestCase {
         let identification = "metropolitan"
         let result = UIColor.lineColor(id: identification)
         
-        XCTAssertEqual(result, UIColor(rgb: 0x6B1A53))
+        XCTAssertEqual(result, UIColor(named: identification))
     }
     
     func testNorthernID_lineColor_isCorect() {
@@ -71,7 +71,7 @@ final class TubeLineColorTests: XCTestCase {
         let identification = "northern"
         let result = UIColor.lineColor(id: identification)
         
-        XCTAssertEqual(result, UIColor(rgb: 0x000000))
+        XCTAssertEqual(result, UIColor(named: identification))
     }
     
     func testPiccadillyID_lineColor_isCorect() {
@@ -79,7 +79,7 @@ final class TubeLineColorTests: XCTestCase {
         let identification = "piccadilly"
         let result = UIColor.lineColor(id: identification)
         
-        XCTAssertEqual(result, UIColor(rgb: 0x0A18A1))
+        XCTAssertEqual(result, UIColor(named: identification))
     }
     
     func testVictoriaID_lineColor_isCorect() {
@@ -87,7 +87,7 @@ final class TubeLineColorTests: XCTestCase {
         let identification = "victoria"
         let result = UIColor.lineColor(id: identification)
         
-        XCTAssertEqual(result, UIColor(rgb: 0x479EDD))
+        XCTAssertEqual(result, UIColor(named: identification))
     }
     
     func testWaterlooAndCityID_lineColor_isCorect() {
@@ -95,8 +95,15 @@ final class TubeLineColorTests: XCTestCase {
         let identification = "waterloo-city"
         let result = UIColor.lineColor(id: identification)
         
-        XCTAssertEqual(result, UIColor(rgb: 0x8CCDBD))
+        XCTAssertEqual(result, UIColor(named: identification))
     }
 
+    func testIncorrectID_lineColor_isNil() {
+        
+        let identification = "Underground"
+        let result = UIColor.lineColor(id: identification)
+        
+        XCTAssertNil(result)
+    }
 
 }
