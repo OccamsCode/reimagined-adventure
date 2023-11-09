@@ -16,7 +16,9 @@ class TubeStatusTableViewController: UITableViewController {
 
         precondition(viewModel != nil, "You forgot to attach a ViewModel")
         tableView.register(cellType: TubeStatusTableViewCell.self)
-
+        tableView.separatorColor = .label
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        
         viewModel.fetchAllStatus {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
