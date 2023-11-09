@@ -9,6 +9,6 @@ import UIKit
 
 extension UIColor {
     static func lineColor(id: String) -> UIColor? {
-        return nil
+        return UIColor(named: id)
     }
 }
