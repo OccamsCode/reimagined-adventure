@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BA75F1952AFD2F8700D30FF3 /* TubeLineColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75F1942AFD2F8700D30FF3 /* TubeLineColorTests.swift */; };
+		BA75F1982AFD3E0E00D30FF3 /* AccessibilityGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75F1972AFD3E0E00D30FF3 /* AccessibilityGenerator.swift */; };
+		BA75F19A2AFD3E2700D30FF3 /* AccessibilityGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75F1992AFD3E2700D30FF3 /* AccessibilityGeneratorTests.swift */; };
 		BA8A1D5E2AFA94F900DE7D09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1D5D2AFA94F900DE7D09 /* AppDelegate.swift */; };
 		BA8A1D602AFA94F900DE7D09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1D5F2AFA94F900DE7D09 /* SceneDelegate.swift */; };
 		BA8A1D672AFA94FC00DE7D09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1D662AFA94FC00DE7D09 /* Assets.xcassets */; };
@@ -65,6 +67,8 @@
 
 /* Begin PBXFileReference section */
 		BA75F1942AFD2F8700D30FF3 /* TubeLineColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeLineColorTests.swift; sourceTree = "<group>"; };
+		BA75F1972AFD3E0E00D30FF3 /* AccessibilityGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityGenerator.swift; sourceTree = "<group>"; };
+		BA75F1992AFD3E2700D30FF3 /* AccessibilityGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityGeneratorTests.swift; sourceTree = "<group>"; };
 		BA8A1D5A2AFA94F900DE7D09 /* Tube Status.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tube Status.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8A1D5D2AFA94F900DE7D09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA8A1D5F2AFA94F900DE7D09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +142,14 @@
 				BA75F1942AFD2F8700D30FF3 /* TubeLineColorTests.swift */,
 			);
 			path = DesignSystemTests;
+			sourceTree = "<group>";
+		};
+		BA75F1962AFD3DC500D30FF3 /* AccessibilityGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				BA75F1972AFD3E0E00D30FF3 /* AccessibilityGenerator.swift */,
+			);
+			path = AccessibilityGenerator;
 			sourceTree = "<group>";
 		};
 		BA8A1D512AFA94F900DE7D09 = {
@@ -301,6 +313,7 @@
 		BA8A1DC42AFBE13C00DE7D09 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BA75F1962AFD3DC500D30FF3 /* AccessibilityGenerator */,
 				BA8A1DFE2AFD17D400DE7D09 /* Design System */,
 				BA8A1DC52AFBE14100DE7D09 /* Navigation */,
 			);
@@ -411,6 +424,7 @@
 			children = (
 				BA75F1932AFD2F6C00D30FF3 /* DesignSystemTests */,
 				BA8A1DCA2AFBE2F500DE7D09 /* CoordinatorTests */,
+				BA75F1992AFD3E2700D30FF3 /* AccessibilityGeneratorTests.swift */,
 			);
 			path = SharedTests;
 			sourceTree = "<group>";
@@ -562,6 +576,7 @@
 				BA8A1DB02AFBBC9500DE7D09 /* TFLClient.swift in Sources */,
 				BA8A1DD02AFBE4C100DE7D09 /* TubeStatusFlowCoordinator.swift in Sources */,
 				BA8A1E002AFD2D2100DE7D09 /* TubeLineColor.swift in Sources */,
+				BA75F1982AFD3E0E00D30FF3 /* AccessibilityGenerator.swift in Sources */,
 				BA8A1DE42AFBFC9C00DE7D09 /* TubeStatusViewModel.swift in Sources */,
 				BA8A1DA42AFBACCB00DE7D09 /* DomainMapper.swift in Sources */,
 				BA8A1DF72AFD071400DE7D09 /* TubeStatusTableViewCell.swift in Sources */,
@@ -584,6 +599,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA8A1DCC2AFBE31200DE7D09 /* AppCordinatorTests.swift in Sources */,
+				BA75F19A2AFD3E2700D30FF3 /* AccessibilityGeneratorTests.swift in Sources */,
 				BA8A1D8C2AFAA98700DE7D09 /* RemoteLineStatusTests.swift in Sources */,
 				BA8A1DD22AFBE5BA00DE7D09 /* TubeStatusFlowCoordinatorTests.swift in Sources */,
 				BA8A1DDC2AFBF7E700DE7D09 /* TestingRootViewController.swift in Sources */,
