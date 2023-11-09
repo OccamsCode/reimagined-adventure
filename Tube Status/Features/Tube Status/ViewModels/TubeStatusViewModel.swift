@@ -5,6 +5,7 @@
 //  Created by Brian Munjoma on 08/11/2023.
 //
 
+import Foundation
 import Injection
 import Poppify
 
@@ -38,5 +39,9 @@ final class TubeStatusViewModel {
     func numberOfItems(inSection section: Int) -> Int {
         if section < 0 || section >= numberOfSections { return 0 }
         return lineDetails.count
+    }
+    
+    func object(at indexPath: IndexPath) -> LineDetails? {
+        return nil
     }
 }

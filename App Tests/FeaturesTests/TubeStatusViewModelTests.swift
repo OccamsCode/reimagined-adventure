@@ -23,6 +23,7 @@ final class TubeStatusViewModelTests: XCTestCase {
         respository = nil
     }
     
+    // MARK: - numberOfSections Tests
     func testInitialViewModel_numberOfSection_isZero() {
         
         let result = sut.numberOfSections
@@ -56,6 +57,7 @@ final class TubeStatusViewModelTests: XCTestCase {
         XCTAssertEqual(result, 1)
     }
     
+    // MARK: - numberOfItems(inSection:) Tests
     func testInitialViewModel_numberOfItemInSectionZero_isZero() {
         
         let result = sut.numberOfItems(inSection: 0)
@@ -188,6 +190,116 @@ final class TubeStatusViewModelTests: XCTestCase {
         XCTAssertEqual(result, 0)
     }
 
+    // MARK: - object(at: indexPath) Tests
+    func testInitialViewModel_objectAtIndexPathZero_isNil() {
+        
+        let indexPath = IndexPath(row: 0, section: 0)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNil(result)
+    }
+    
+    func testInitialViewModel_objectAtIndexPath_sectionNegativeRowZero_isNil() {
+        
+        let indexPath = IndexPath(row: 0, section: -1)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNil(result)
+    }
+    
+    func testInitialViewModel_objectAtIndexPath_sectionZeroRowNegative_isNil() {
+        
+        let indexPath = IndexPath(row: -1, section: 0)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNil(result)
+    }
+    
+    func testInitialViewModel_objectAtIndexPath_sectionOneRowZero_isNil() {
+        
+        let indexPath = IndexPath(row: 0, section: 1)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNil(result)
+    }
+    
+    func testInitialViewModel_objectAtIndexPath_sectionZeroRowOne_isNil() {
+        
+        let indexPath = IndexPath(row: 1, section: 0)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNil(result)
+    }
+    
+    func testFetchAllStatusesReturnsSingleItem_objectAtIndexPathZero_isNotNil() {
+        
+        let expectFetchTubeStatus = expectation(description: "Fetch Tube Status")
+        
+        respository.state = .data(count: 1)
+        sut.fetchAllStatus { expectFetchTubeStatus.fulfill() }
+        wait(for: [expectFetchTubeStatus], timeout: 1.0)
+        
+        let indexPath = IndexPath(row: 0, section: 0)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNotNil(result)
+    }
+    
+    func testFetchAllStatusesReturnsSingleItem_objectAtIndexPath_sectionNegativeRowZero_isNil() {
+        
+        let expectFetchTubeStatus = expectation(description: "Fetch Tube Status")
+        
+        respository.state = .data(count: 1)
+        sut.fetchAllStatus { expectFetchTubeStatus.fulfill() }
+        wait(for: [expectFetchTubeStatus], timeout: 1.0)
+        
+        let indexPath = IndexPath(row: 0, section: -1)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNil(result)
+    }
+    
+    func testFetchAllStatusesReturnsSingleItem_objectAtIndexPath_sectionZeroRowNegative_isNil() {
+        
+        let expectFetchTubeStatus = expectation(description: "Fetch Tube Status")
+        
+        respository.state = .data(count: 1)
+        sut.fetchAllStatus { expectFetchTubeStatus.fulfill() }
+        wait(for: [expectFetchTubeStatus], timeout: 1.0)
+        
+        let indexPath = IndexPath(row: -1, section: 0)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNil(result)
+    }
+    
+    func testFetchAllStatusesReturnsSingleItem_objectAtIndexPath_sectionOneRowZero_isNil() {
+        
+        let expectFetchTubeStatus = expectation(description: "Fetch Tube Status")
+        
+        respository.state = .data(count: 1)
+        sut.fetchAllStatus { expectFetchTubeStatus.fulfill() }
+        wait(for: [expectFetchTubeStatus], timeout: 1.0)
+        
+        let indexPath = IndexPath(row: 0, section: 1)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNil(result)
+    }
+    
+    func testFetchAllStatusesReturnsSingleItem_objectAtIndexPath_sectionZeroRowOne_isNil() {
+        
+        let expectFetchTubeStatus = expectation(description: "Fetch Tube Status")
+        
+        respository.state = .data(count: 1)
+        sut.fetchAllStatus { expectFetchTubeStatus.fulfill() }
+        wait(for: [expectFetchTubeStatus], timeout: 1.0)
+        
+        let indexPath = IndexPath(row: 1, section: 0)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNil(result)
+    }
 }
 
 class MocksGenerator {
