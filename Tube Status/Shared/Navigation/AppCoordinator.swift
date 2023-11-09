@@ -20,6 +20,7 @@ final class AppCoordinator: Coordinator {
     
     func start() {
         let statusNavigationController = UINavigationController()
+        statusNavigationController.setNavigationBarHidden(true, animated: false)
         let tubeStatusFlow = TubeStatusFlowCoordinator(statusNavigationController)
 
         tubeStatusFlow.start()
