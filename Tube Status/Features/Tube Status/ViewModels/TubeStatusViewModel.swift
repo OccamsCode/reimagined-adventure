@@ -42,6 +42,7 @@ final class TubeStatusViewModel {
     }
     
     func object(at indexPath: IndexPath) -> LineDetails? {
-        return nil
+        if indexPath.row < 0 || indexPath.row >= numberOfItems(inSection: indexPath.section) { return nil }
+        return lineDetails[indexPath.row]
     }
 }
