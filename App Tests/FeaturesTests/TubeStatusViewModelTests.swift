@@ -83,6 +83,110 @@ final class TubeStatusViewModelTests: XCTestCase {
         
         XCTAssertEqual(result, 0)
     }
+    
+    func testFetchAllStatusesReturnsSingleItem_numberOfItemsInSectionZero_isOne() {
+        
+        let expectFetchTubeStatus = expectation(description: "Fetch Tube Status")
+        
+        respository.state = .data(count: 1)
+        sut.fetchAllStatus { expectFetchTubeStatus.fulfill() }
+        wait(for: [expectFetchTubeStatus], timeout: 1.0)
+        
+        let result = sut.numberOfItems(inSection: 0)
+        
+        XCTAssertEqual(result, 1)
+    }
+    
+    func testFetchAllStatusesReturnsSingleItem_numberOfItemsInSectionNegative_isZero() {
+        
+        let expectFetchTubeStatus = expectation(description: "Fetch Tube Status")
+        
+        respository.state = .data(count: 1)
+        sut.fetchAllStatus { expectFetchTubeStatus.fulfill() }
+        wait(for: [expectFetchTubeStatus], timeout: 1.0)
+        
+        let result = sut.numberOfItems(inSection: -1)
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func testFetchAllStatusesReturnsSingleItem_numberOfItemsInSectionOne_isZero() {
+        
+        let expectFetchTubeStatus = expectation(description: "Fetch Tube Status")
+        
+        respository.state = .data(count: 1)
+        sut.fetchAllStatus { expectFetchTubeStatus.fulfill() }
+        wait(for: [expectFetchTubeStatus], timeout: 1.0)
+        
+        let result = sut.numberOfItems(inSection: 1)
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func testFetchAllStatusesReturnsSingleItem_numberOfItemsInSectionThree_isZero() {
+        
+        let expectFetchTubeStatus = expectation(description: "Fetch Tube Status")
+        
+        respository.state = .data(count: 1)
+        sut.fetchAllStatus { expectFetchTubeStatus.fulfill() }
+        wait(for: [expectFetchTubeStatus], timeout: 1.0)
+        
+        let result = sut.numberOfItems(inSection: 3)
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func testFetchAllStatusesReturnsMultipleItems_numberOfItemsInSectionZero_isThree() {
+        
+        let expectFetchTubeStatus = expectation(description: "Fetch Tube Status")
+        
+        respository.state = .data(count: 3)
+        sut.fetchAllStatus { expectFetchTubeStatus.fulfill() }
+        wait(for: [expectFetchTubeStatus], timeout: 1.0)
+        
+        let result = sut.numberOfItems(inSection: 0)
+        
+        XCTAssertEqual(result, 3)
+    }
+    
+    func testFetchAllStatusesReturnsMultipleItems_numberOfItemsInSectionNegative_isZero() {
+        
+        let expectFetchTubeStatus = expectation(description: "Fetch Tube Status")
+        
+        respository.state = .data(count: 3)
+        sut.fetchAllStatus { expectFetchTubeStatus.fulfill() }
+        wait(for: [expectFetchTubeStatus], timeout: 1.0)
+        
+        let result = sut.numberOfItems(inSection: -1)
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func testFetchAllStatusesReturnsMultipleItems_numberOfItemsInSectionOne_isZero() {
+        
+        let expectFetchTubeStatus = expectation(description: "Fetch Tube Status")
+        
+        respository.state = .data(count: 3)
+        sut.fetchAllStatus { expectFetchTubeStatus.fulfill() }
+        wait(for: [expectFetchTubeStatus], timeout: 1.0)
+        
+        let result = sut.numberOfItems(inSection: 1)
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func testFetchAllStatusesReturnsMultipleItems_numberOfItemsInSectionThree_isZero() {
+        
+        let expectFetchTubeStatus = expectation(description: "Fetch Tube Status")
+        
+        respository.state = .data(count: 3)
+        sut.fetchAllStatus { expectFetchTubeStatus.fulfill() }
+        wait(for: [expectFetchTubeStatus], timeout: 1.0)
+        
+        let result = sut.numberOfItems(inSection: 3)
+        
+        XCTAssertEqual(result, 0)
+    }
 
 }
 
