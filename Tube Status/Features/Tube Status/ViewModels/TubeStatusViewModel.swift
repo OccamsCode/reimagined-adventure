@@ -36,6 +36,7 @@ final class TubeStatusViewModel {
     }
     
     func numberOfItems(inSection section: Int) -> Int {
-        return 0
+        if section < 0 || section >= numberOfSections { return 0 }
+        return lineDetails.count
     }
 }
