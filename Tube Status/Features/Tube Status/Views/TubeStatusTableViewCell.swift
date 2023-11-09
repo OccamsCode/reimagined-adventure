@@ -21,9 +21,12 @@ class TubeStatusTableViewCell: UITableViewCell {
     
     func update(using model: LineDetails) {
         
+        tubeColorView.backgroundColor = .lineColor(id: model.id)
         tubeNameLabel.text = model.name
         tubeStatusLabel.text = model.lineStatus
             .map { $0.reason ?? $0.statusSeverityDescription }
             .joined(separator: "\n")
+        
+        accessibilityLabel = AccessibilityGenerator.generate(model)
     }
 }
