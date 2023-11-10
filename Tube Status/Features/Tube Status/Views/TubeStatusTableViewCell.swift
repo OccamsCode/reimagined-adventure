@@ -15,8 +15,6 @@ class TubeStatusTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        tubeNameLabel.text = nil
-        tubeStatusLabel.text = nil
     }
     
     func update(using model: LineDetails) {
@@ -28,5 +26,15 @@ class TubeStatusTableViewCell: UITableViewCell {
             .joined(separator: "\n")
         
         accessibilityLabel = AccessibilityGenerator.generate(model)
+    }
+}
+
+extension TubeStatusTableViewCell: Shimmering {
+    var shimmeringAnimatedItems: [UIView] {
+        [
+            tubeColorView,
+            tubeNameLabel,
+            tubeStatusLabel
+        ]
     }
 }
