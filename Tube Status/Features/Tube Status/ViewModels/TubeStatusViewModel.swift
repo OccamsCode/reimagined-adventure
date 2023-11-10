@@ -22,29 +22,42 @@ final class TubeStatusViewModel {
     }
     
     func fetchAllStatus(_ completion: @escaping () -> Void) {
-        
+        loadingState = .loading
         repository.fetchTubeStatus { [unowned self] result in
             switch result {
             case .success(let success):
                 self.lineDetails = success
+                self.loadingState = .success
             case .failure(let failure):
                 print(failure)
+                self.loadingState = .failed(failure)
             }
             completion()
         }
     }
     
     var numberOfSections: Int {
-        return lineDetails.isEmpty ? 0 : 1
+        switch loadingState {
+        case .loading: return 1
+        default: return lineDetails.isEmpty ? 0 : 1
+        }
     }
     
     func numberOfItems(inSection section: Int) -> Int {
-        if section < 0 || section >= numberOfSections { return 0 }
-        return lineDetails.count
+        switch loadingState {
+        case .loading: return 10
+        default:
+            if section < 0 || section >= numberOfSections { return 0 }
+            return lineDetails.count
+        }
     }
     
     func object(at indexPath: IndexPath) -> LineDetails? {
-        if indexPath.row < 0 || indexPath.row >= numberOfItems(inSection: indexPath.section) { return nil }
-        return lineDetails[indexPath.row]
+        switch loadingState {
+        case .loading: return nil
+        default:
+            if indexPath.row < 0 || indexPath.row >= numberOfItems(inSection: indexPath.section) { return nil }
+            return lineDetails[indexPath.row]
+        }
     }
 }
