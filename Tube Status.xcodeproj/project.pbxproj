@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA75F1952AFD2F8700D30FF3 /* TubeLineColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75F1942AFD2F8700D30FF3 /* TubeLineColorTests.swift */; };
+		BA75F1982AFD3E0E00D30FF3 /* AccessibilityGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75F1972AFD3E0E00D30FF3 /* AccessibilityGenerator.swift */; };
+		BA75F19A2AFD3E2700D30FF3 /* AccessibilityGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75F1992AFD3E2700D30FF3 /* AccessibilityGeneratorTests.swift */; };
+		BA75F19C2AFE4F5D00D30FF3 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75F19B2AFE4F5D00D30FF3 /* LoadingState.swift */; };
 		BA8A1D5E2AFA94F900DE7D09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1D5D2AFA94F900DE7D09 /* AppDelegate.swift */; };
 		BA8A1D602AFA94F900DE7D09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1D5F2AFA94F900DE7D09 /* SceneDelegate.swift */; };
 		BA8A1D672AFA94FC00DE7D09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1D662AFA94FC00DE7D09 /* Assets.xcassets */; };
@@ -45,6 +49,18 @@
 		BA8A1DEC2AFC205C00DE7D09 /* RemoteLineModeStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1DEB2AFC205C00DE7D09 /* RemoteLineModeStatus.json */; };
 		BA8A1DEF2AFC276A00DE7D09 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DEE2AFC276A00DE7D09 /* Mocks.swift */; };
 		BA8A1DF42AFC292B00DE7D09 /* TubeStatusViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DF32AFC292B00DE7D09 /* TubeStatusViewModelTests.swift */; };
+		BA8A1DF72AFD071400DE7D09 /* TubeStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DF52AFD071400DE7D09 /* TubeStatusTableViewCell.swift */; };
+		BA8A1DF82AFD071400DE7D09 /* TubeStatusTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1DF62AFD071400DE7D09 /* TubeStatusTableViewCell.xib */; };
+		BA8A1DFB2AFD0B2900DE7D09 /* ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DFA2AFD0B2900DE7D09 /* ClassName.swift */; };
+		BA8A1DFD2AFD0B6700DE7D09 /* TableViewCellReuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DFC2AFD0B6700DE7D09 /* TableViewCellReuse.swift */; };
+		BA8A1E002AFD2D2100DE7D09 /* TubeLineColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1DFF2AFD2D2100DE7D09 /* TubeLineColor.swift */; };
+		BAB2ACE22AFE8D0900C600EF /* ShimmerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2ACE12AFE8D0800C600EF /* ShimmerConstants.swift */; };
+		BAB2ACE42AFE8D5D00C600EF /* Shimmering.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2ACE32AFE8D5D00C600EF /* Shimmering.swift */; };
+		BAB2ACE62AFE8D9C00C600EF /* UIView+Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2ACE52AFE8D9C00C600EF /* UIView+Template.swift */; };
+		BAB2ACE82AFE8DE700C600EF /* UIView+Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2ACE72AFE8DE700C600EF /* UIView+Shimmer.swift */; };
+		BAB2ACEA2AFE8E6C00C600EF /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2ACE92AFE8E6C00C600EF /* UIView+Extensions.swift */; };
+		BAB2ACED2AFE941B00C600EF /* EmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2ACEC2AFE941B00C600EF /* EmptyDataSet.swift */; };
+		BAB2ACEF2AFE946A00C600EF /* EmptyDateSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2ACEE2AFE946A00C600EF /* EmptyDateSetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +74,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA75F1942AFD2F8700D30FF3 /* TubeLineColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeLineColorTests.swift; sourceTree = "<group>"; };
+		BA75F1972AFD3E0E00D30FF3 /* AccessibilityGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityGenerator.swift; sourceTree = "<group>"; };
+		BA75F1992AFD3E2700D30FF3 /* AccessibilityGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityGeneratorTests.swift; sourceTree = "<group>"; };
+		BA75F19B2AFE4F5D00D30FF3 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
 		BA8A1D5A2AFA94F900DE7D09 /* Tube Status.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tube Status.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8A1D5D2AFA94F900DE7D09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA8A1D5F2AFA94F900DE7D09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +118,18 @@
 		BA8A1DEB2AFC205C00DE7D09 /* RemoteLineModeStatus.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RemoteLineModeStatus.json; sourceTree = "<group>"; };
 		BA8A1DEE2AFC276A00DE7D09 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		BA8A1DF32AFC292B00DE7D09 /* TubeStatusViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeStatusViewModelTests.swift; sourceTree = "<group>"; };
+		BA8A1DF52AFD071400DE7D09 /* TubeStatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeStatusTableViewCell.swift; sourceTree = "<group>"; };
+		BA8A1DF62AFD071400DE7D09 /* TubeStatusTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TubeStatusTableViewCell.xib; sourceTree = "<group>"; };
+		BA8A1DFA2AFD0B2900DE7D09 /* ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassName.swift; sourceTree = "<group>"; };
+		BA8A1DFC2AFD0B6700DE7D09 /* TableViewCellReuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellReuse.swift; sourceTree = "<group>"; };
+		BA8A1DFF2AFD2D2100DE7D09 /* TubeLineColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeLineColor.swift; sourceTree = "<group>"; };
+		BAB2ACE12AFE8D0800C600EF /* ShimmerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerConstants.swift; sourceTree = "<group>"; };
+		BAB2ACE32AFE8D5D00C600EF /* Shimmering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shimmering.swift; sourceTree = "<group>"; };
+		BAB2ACE52AFE8D9C00C600EF /* UIView+Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Template.swift"; sourceTree = "<group>"; };
+		BAB2ACE72AFE8DE700C600EF /* UIView+Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmer.swift"; sourceTree = "<group>"; };
+		BAB2ACE92AFE8E6C00C600EF /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		BAB2ACEC2AFE941B00C600EF /* EmptyDataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDataSet.swift; sourceTree = "<group>"; };
+		BAB2ACEE2AFE946A00C600EF /* EmptyDateSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDateSetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +152,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA75F1932AFD2F6C00D30FF3 /* DesignSystemTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA75F1942AFD2F8700D30FF3 /* TubeLineColorTests.swift */,
+			);
+			path = DesignSystemTests;
+			sourceTree = "<group>";
+		};
+		BA75F1962AFD3DC500D30FF3 /* AccessibilityGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				BA75F1972AFD3E0E00D30FF3 /* AccessibilityGenerator.swift */,
+			);
+			path = AccessibilityGenerator;
+			sourceTree = "<group>";
+		};
 		BA8A1D512AFA94F900DE7D09 = {
 			isa = PBXGroup;
 			children = (
@@ -264,7 +312,11 @@
 		BA8A1DB12AFBBD0500DE7D09 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				BAB2ACEB2AFE940700C600EF /* EmptyDataSet */,
+				BAB2ACE02AFE8CE600C600EF /* Shimmering */,
+				BA8A1DF92AFD0AFA00DE7D09 /* TableViewCellReusable */,
 				BA8A1DB22AFBBD1300DE7D09 /* Injection */,
+				BA75F19B2AFE4F5D00D30FF3 /* LoadingState.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -280,6 +332,8 @@
 		BA8A1DC42AFBE13C00DE7D09 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BA75F1962AFD3DC500D30FF3 /* AccessibilityGenerator */,
+				BA8A1DFE2AFD17D400DE7D09 /* Design System */,
 				BA8A1DC52AFBE14100DE7D09 /* Navigation */,
 			);
 			path = Shared;
@@ -334,6 +388,8 @@
 		BA8A1DDF2AFBFBFC00DE7D09 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A1DF52AFD071400DE7D09 /* TubeStatusTableViewCell.swift */,
+				BA8A1DF62AFD071400DE7D09 /* TubeStatusTableViewCell.xib */,
 				BA8A1DE12AFBFC3A00DE7D09 /* TubeStatusTableViewController.swift */,
 			);
 			path = Views;
@@ -385,7 +441,9 @@
 		BA8A1DF12AFC28A300DE7D09 /* SharedTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA75F1932AFD2F6C00D30FF3 /* DesignSystemTests */,
 				BA8A1DCA2AFBE2F500DE7D09 /* CoordinatorTests */,
+				BA75F1992AFD3E2700D30FF3 /* AccessibilityGeneratorTests.swift */,
 			);
 			path = SharedTests;
 			sourceTree = "<group>";
@@ -396,6 +454,44 @@
 				BA8A1DF32AFC292B00DE7D09 /* TubeStatusViewModelTests.swift */,
 			);
 			path = FeaturesTests;
+			sourceTree = "<group>";
+		};
+		BA8A1DF92AFD0AFA00DE7D09 /* TableViewCellReusable */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1DFA2AFD0B2900DE7D09 /* ClassName.swift */,
+				BA8A1DFC2AFD0B6700DE7D09 /* TableViewCellReuse.swift */,
+			);
+			path = TableViewCellReusable;
+			sourceTree = "<group>";
+		};
+		BA8A1DFE2AFD17D400DE7D09 /* Design System */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A1DFF2AFD2D2100DE7D09 /* TubeLineColor.swift */,
+			);
+			path = "Design System";
+			sourceTree = "<group>";
+		};
+		BAB2ACE02AFE8CE600C600EF /* Shimmering */ = {
+			isa = PBXGroup;
+			children = (
+				BAB2ACE12AFE8D0800C600EF /* ShimmerConstants.swift */,
+				BAB2ACE32AFE8D5D00C600EF /* Shimmering.swift */,
+				BAB2ACE52AFE8D9C00C600EF /* UIView+Template.swift */,
+				BAB2ACE72AFE8DE700C600EF /* UIView+Shimmer.swift */,
+				BAB2ACE92AFE8E6C00C600EF /* UIView+Extensions.swift */,
+			);
+			path = Shimmering;
+			sourceTree = "<group>";
+		};
+		BAB2ACEB2AFE940700C600EF /* EmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				BAB2ACEC2AFE941B00C600EF /* EmptyDataSet.swift */,
+				BAB2ACEE2AFE946A00C600EF /* EmptyDateSetView.swift */,
+			);
+			path = EmptyDataSet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,6 +584,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA8A1D6A2AFA94FC00DE7D09 /* LaunchScreen.storyboard in Resources */,
+				BA8A1DF82AFD071400DE7D09 /* TubeStatusTableViewCell.xib in Resources */,
 				BA8A1D672AFA94FC00DE7D09 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,21 +611,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA8A1DC92AFBE28F00DE7D09 /* AppCoordinator.swift in Sources */,
+				BA8A1DFD2AFD0B6700DE7D09 /* TableViewCellReuse.swift in Sources */,
 				BA8A1DD72AFBF5CF00DE7D09 /* main.swift in Sources */,
 				BA8A1DB02AFBBC9500DE7D09 /* TFLClient.swift in Sources */,
 				BA8A1DD02AFBE4C100DE7D09 /* TubeStatusFlowCoordinator.swift in Sources */,
+				BA8A1E002AFD2D2100DE7D09 /* TubeLineColor.swift in Sources */,
+				BAB2ACED2AFE941B00C600EF /* EmptyDataSet.swift in Sources */,
+				BAB2ACE22AFE8D0900C600EF /* ShimmerConstants.swift in Sources */,
+				BA75F1982AFD3E0E00D30FF3 /* AccessibilityGenerator.swift in Sources */,
+				BAB2ACEF2AFE946A00C600EF /* EmptyDateSetView.swift in Sources */,
 				BA8A1DE42AFBFC9C00DE7D09 /* TubeStatusViewModel.swift in Sources */,
 				BA8A1DA42AFBACCB00DE7D09 /* DomainMapper.swift in Sources */,
+				BA8A1DF72AFD071400DE7D09 /* TubeStatusTableViewCell.swift in Sources */,
+				BA75F19C2AFE4F5D00D30FF3 /* LoadingState.swift in Sources */,
+				BAB2ACEA2AFE8E6C00C600EF /* UIView+Extensions.swift in Sources */,
 				BA8A1DC72AFBE17B00DE7D09 /* Coordinator.swift in Sources */,
 				BA8A1D5E2AFA94F900DE7D09 /* AppDelegate.swift in Sources */,
+				BAB2ACE42AFE8D5D00C600EF /* Shimmering.swift in Sources */,
 				BA8A1DE22AFBFC3A00DE7D09 /* TubeStatusTableViewController.swift in Sources */,
 				BA8A1DE72AFBFEF500DE7D09 /* TubeStatusRepository.swift in Sources */,
 				BA8A1DB62AFBBF2C00DE7D09 /* Requests.swift in Sources */,
+				BAB2ACE62AFE8D9C00C600EF /* UIView+Template.swift in Sources */,
 				BA8A1D8E2AFAACEA00DE7D09 /* RemoteLineModeStatus.swift in Sources */,
 				BA8A1DA02AFBA9B600DE7D09 /* LineDetails.swift in Sources */,
 				BA8A1D602AFA94F900DE7D09 /* SceneDelegate.swift in Sources */,
 				BA8A1DA22AFBAB3200DE7D09 /* LineStatusDetails.swift in Sources */,
 				BA8A1DB42AFBBD3300DE7D09 /* InjectedValues+Extension.swift in Sources */,
+				BAB2ACE82AFE8DE700C600EF /* UIView+Shimmer.swift in Sources */,
+				BA8A1DFB2AFD0B2900DE7D09 /* ClassName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,10 +647,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA8A1DCC2AFBE31200DE7D09 /* AppCordinatorTests.swift in Sources */,
+				BA75F19A2AFD3E2700D30FF3 /* AccessibilityGeneratorTests.swift in Sources */,
 				BA8A1D8C2AFAA98700DE7D09 /* RemoteLineStatusTests.swift in Sources */,
 				BA8A1DD22AFBE5BA00DE7D09 /* TubeStatusFlowCoordinatorTests.swift in Sources */,
 				BA8A1DDC2AFBF7E700DE7D09 /* TestingRootViewController.swift in Sources */,
 				BA8A1DD62AFBF21800DE7D09 /* TestingAppDelegate.swift in Sources */,
+				BA75F1952AFD2F8700D30FF3 /* TubeLineColorTests.swift in Sources */,
 				BA8A1DF42AFC292B00DE7D09 /* TubeStatusViewModelTests.swift in Sources */,
 				BA8A1DA72AFBAED800DE7D09 /* DomainMapperTests.swift in Sources */,
 				BA8A1DEF2AFC276A00DE7D09 /* Mocks.swift in Sources */,

@@ -24,7 +24,25 @@ final class TubeStatusViewModelTests: XCTestCase {
     }
     
     // MARK: - numberOfSections Tests
-    func testInitialViewModel_numberOfSection_isZero() {
+    func testInitialViewModel_numberOfSections_isZero() {
+        
+        let result = sut.numberOfSections
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func testLoadingStateLoading_numberOfSections_isOne() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .loading)
+        
+        let result = sut.numberOfSections
+        
+        XCTAssertEqual(result, 1)
+    }
+    
+    func testLoadingStateFailed_numberOfSections_isZero() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .failed(MockError.err))
         
         let result = sut.numberOfSections
         
@@ -81,6 +99,70 @@ final class TubeStatusViewModelTests: XCTestCase {
     
     func testInitialViewModel_numberOfItemInSectionThree_isZero() {
         
+        let result = sut.numberOfItems(inSection: 3)
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func testLoadingStateLoading_numberOfItemInSectionZero_isTen() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .loading)
+        let result = sut.numberOfItems(inSection: 0)
+        
+        XCTAssertEqual(result, 10)
+    }
+    
+    func testLoadingStateLoading_numberOfItemInSectionNegative_isTen() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .loading)
+        let result = sut.numberOfItems(inSection: -1)
+        
+        XCTAssertEqual(result, 10)
+    }
+    
+    func testLoadingStateLoading_numberOfItemInSectionOne_isTen() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .loading)
+        let result = sut.numberOfItems(inSection: 1)
+        
+        XCTAssertEqual(result, 10)
+    }
+    
+    func testLoadingStateLoading_numberOfItemInSectionThree_isTen() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .loading)
+        let result = sut.numberOfItems(inSection: 3)
+        
+        XCTAssertEqual(result, 10)
+    }
+    
+    func testLoadingStateFailed_numberOfItemInSectionZero_isZero() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .failed(MockError.err))
+        let result = sut.numberOfItems(inSection: 0)
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func testLoadingStateFailed_numberOfItemInSectionNegative_isZero() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .failed(MockError.err))
+        let result = sut.numberOfItems(inSection: -1)
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func testLoadingStateFailed_numberOfItemInSectionOne_isZero() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .failed(MockError.err))
+        let result = sut.numberOfItems(inSection: 1)
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func testLoadingStateFailed_numberOfItemInSectionThree_isZero() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .failed(MockError.err))
         let result = sut.numberOfItems(inSection: 3)
         
         XCTAssertEqual(result, 0)
@@ -231,6 +313,96 @@ final class TubeStatusViewModelTests: XCTestCase {
         XCTAssertNil(result)
     }
     
+    func testLoadingStateLoading_objectAtIndexPathZero_isNil() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .loading)
+        let indexPath = IndexPath(row: 0, section: 0)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNil(result)
+    }
+    
+    func testLoadingStateLoading_objectAtIndexPath_sectionNegativeRowZero_isNil() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .loading)
+        let indexPath = IndexPath(row: 0, section: -1)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNil(result)
+    }
+    
+    func testLoadingStateLoading_objectAtIndexPath_sectionZeroRowNegative_isNil() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .loading)
+        let indexPath = IndexPath(row: -1, section: 0)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNil(result)
+    }
+    
+    func testLoadingStateLoading_objectAtIndexPath_sectionOneRowZero_isNil() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .loading)
+        let indexPath = IndexPath(row: 0, section: 1)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNil(result)
+    }
+    
+    func testLoadingStateLoading_objectAtIndexPath_sectionZeroRowOne_isNil() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .loading)
+        let indexPath = IndexPath(row: 1, section: 0)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNil(result)
+    }
+    
+    func testLoadingStateFailed_objectAtIndexPathZero_isNil() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .failed(MockError.err))
+        let indexPath = IndexPath(row: 0, section: 0)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNil(result)
+    }
+    
+    func testLoadingStateFailed_objectAtIndexPath_sectionNegativeRowZero_isNil() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .failed(MockError.err))
+        let indexPath = IndexPath(row: 0, section: -1)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNil(result)
+    }
+    
+    func testLoadingStateFailed_objectAtIndexPath_sectionZeroRowNegative_isNil() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .failed(MockError.err))
+        let indexPath = IndexPath(row: -1, section: 0)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNil(result)
+    }
+    
+    func testLoadingStateFailed_objectAtIndexPath_sectionOneRowZero_isNil() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .failed(MockError.err))
+        let indexPath = IndexPath(row: 0, section: 1)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNil(result)
+    }
+    
+    func testLoadingStateFailed_objectAtIndexPath_sectionZeroRowOne_isNil() {
+        
+        sut = TubeStatusViewModel(respository, loadingState: .failed(MockError.err))
+        let indexPath = IndexPath(row: 1, section: 0)
+        let result = sut.object(at: indexPath)
+        
+        XCTAssertNil(result)
+    }
+    
     func testFetchAllStatusesReturnsSingleItem_objectAtIndexPathZero_isNotNil() {
         
         let expectFetchTubeStatus = expectation(description: "Fetch Tube Status")
@@ -300,6 +472,42 @@ final class TubeStatusViewModelTests: XCTestCase {
         
         XCTAssertNil(result)
     }
+    
+    // MARK: - Loading State Tests
+    
+    func testIntialViewModel_loadingState_isIdle() {
+        
+        let result = sut.loadingState
+        
+        XCTAssertEqual(result, .idle)
+    }
+    
+    func testRepostitoryReturnsData_loadingState_isSuccess() {
+        
+        let expectFetchTubeStatus = expectation(description: "Fetch Tube Status")
+        
+        respository.state = .data(count: 1)
+        sut.fetchAllStatus { expectFetchTubeStatus.fulfill() }
+        wait(for: [expectFetchTubeStatus], timeout: 1.0)
+        
+        let result = sut.loadingState
+        
+        XCTAssertEqual(result, .success)
+    }
+    
+    func testRepostitoryReturnsError_loadingState_isFailed() {
+        
+        let expectFetchTubeStatus = expectation(description: "Fetch Tube Status")
+        
+        respository.state = .error
+        sut.fetchAllStatus { expectFetchTubeStatus.fulfill() }
+        wait(for: [expectFetchTubeStatus], timeout: 1.0)
+        
+        let result = sut.loadingState
+        
+        XCTAssertEqual(result, .failed(MockError.err))
+    }
+    
 }
 
 class MocksGenerator {
