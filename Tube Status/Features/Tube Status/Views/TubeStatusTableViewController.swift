@@ -41,4 +41,10 @@ class TubeStatusTableViewController: UITableViewController {
         cell.update(using: model)
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.setTemplateWithSubviews(viewModel.loadingState == .loading, animated: true, viewBackgroundColor: .systemBackground)
+    }
+}
+
 }
