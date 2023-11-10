@@ -59,6 +59,8 @@
 		BAB2ACE62AFE8D9C00C600EF /* UIView+Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2ACE52AFE8D9C00C600EF /* UIView+Template.swift */; };
 		BAB2ACE82AFE8DE700C600EF /* UIView+Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2ACE72AFE8DE700C600EF /* UIView+Shimmer.swift */; };
 		BAB2ACEA2AFE8E6C00C600EF /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2ACE92AFE8E6C00C600EF /* UIView+Extensions.swift */; };
+		BAB2ACED2AFE941B00C600EF /* EmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2ACEC2AFE941B00C600EF /* EmptyDataSet.swift */; };
+		BAB2ACEF2AFE946A00C600EF /* EmptyDateSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2ACEE2AFE946A00C600EF /* EmptyDateSetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +128,8 @@
 		BAB2ACE52AFE8D9C00C600EF /* UIView+Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Template.swift"; sourceTree = "<group>"; };
 		BAB2ACE72AFE8DE700C600EF /* UIView+Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmer.swift"; sourceTree = "<group>"; };
 		BAB2ACE92AFE8E6C00C600EF /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		BAB2ACEC2AFE941B00C600EF /* EmptyDataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDataSet.swift; sourceTree = "<group>"; };
+		BAB2ACEE2AFE946A00C600EF /* EmptyDateSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDateSetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +312,7 @@
 		BA8A1DB12AFBBD0500DE7D09 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				BAB2ACEB2AFE940700C600EF /* EmptyDataSet */,
 				BAB2ACE02AFE8CE600C600EF /* Shimmering */,
 				BA8A1DF92AFD0AFA00DE7D09 /* TableViewCellReusable */,
 				BA8A1DB22AFBBD1300DE7D09 /* Injection */,
@@ -480,6 +485,15 @@
 			path = Shimmering;
 			sourceTree = "<group>";
 		};
+		BAB2ACEB2AFE940700C600EF /* EmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				BAB2ACEC2AFE941B00C600EF /* EmptyDataSet.swift */,
+				BAB2ACEE2AFE946A00C600EF /* EmptyDateSetView.swift */,
+			);
+			path = EmptyDataSet;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -602,8 +616,10 @@
 				BA8A1DB02AFBBC9500DE7D09 /* TFLClient.swift in Sources */,
 				BA8A1DD02AFBE4C100DE7D09 /* TubeStatusFlowCoordinator.swift in Sources */,
 				BA8A1E002AFD2D2100DE7D09 /* TubeLineColor.swift in Sources */,
+				BAB2ACED2AFE941B00C600EF /* EmptyDataSet.swift in Sources */,
 				BAB2ACE22AFE8D0900C600EF /* ShimmerConstants.swift in Sources */,
 				BA75F1982AFD3E0E00D30FF3 /* AccessibilityGenerator.swift in Sources */,
+				BAB2ACEF2AFE946A00C600EF /* EmptyDateSetView.swift in Sources */,
 				BA8A1DE42AFBFC9C00DE7D09 /* TubeStatusViewModel.swift in Sources */,
 				BA8A1DA42AFBACCB00DE7D09 /* DomainMapper.swift in Sources */,
 				BA8A1DF72AFD071400DE7D09 /* TubeStatusTableViewCell.swift in Sources */,

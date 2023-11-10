@@ -23,13 +23,14 @@ final class TubeStatusViewModel {
     
     func fetchAllStatus(_ completion: @escaping () -> Void) {
         loadingState = .loading
+        lineDetails.removeAll()
         repository.fetchTubeStatus { [unowned self] result in
             switch result {
             case .success(let success):
                 self.lineDetails = success
                 self.loadingState = .success
             case .failure(let failure):
-                print(failure)
+                print(failure.localizedDescription)
                 self.loadingState = .failed(failure)
             }
             completion()

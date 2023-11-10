@@ -13,16 +13,34 @@ class TubeStatusTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         precondition(viewModel != nil, "You forgot to attach a ViewModel")
         tableView.register(cellType: TubeStatusTableViewCell.self)
         tableView.separatorColor = .label
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         
-        viewModel.fetchAllStatus { [unowned self] in
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
+        tableView.emptyDataSetView { view in
+            view.titleLabelString(NSAttributedString(string: "Something went wrong"))
+                .detailLabelString(NSAttributedString(string: "Apologies, something appears to have gone wrong. Please try again later."))
+                .buttonTitle(NSAttributedString(string: "Try again", attributes: [.foregroundColor: UIColor.systemBlue]), for: .normal)
+                .didTapDataButton { [weak self] in
+                    defer { self?.reloadTableView() }
+                    self?.refreshViewModel()
+                }
+        }
+        
+        refreshViewModel()
+    }
+        
+    func refreshViewModel() {
+        viewModel.fetchAllStatus { [weak self] in
+            self?.reloadTableView()
+        }
+    }
+    
+    func reloadTableView() {
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.reloadData()
         }
     }
 
@@ -45,6 +63,4 @@ class TubeStatusTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.setTemplateWithSubviews(viewModel.loadingState == .loading, animated: true, viewBackgroundColor: .systemBackground)
     }
-}
-
 }
