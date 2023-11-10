@@ -69,6 +69,8 @@ The following assumptions have been made;
     - Views shimmer when loading.
  - Empty Data Set Pattern
     - Simple implementation of Empty State/Blank State. Can be seen when network is offline.
+ - Unit Tests Display
+    - When running the unit tests, a label is displayed to indicate that the tests are running. 
  - Calls the API Endpoint can be made without an APP KEY
    - From my testing, it appear that calls to `/Line/Mode/Tube/Status` can be made without the APP KEY. I put a check to ensure that an APP KEY is provided or else the app does not run.
   ```swift
