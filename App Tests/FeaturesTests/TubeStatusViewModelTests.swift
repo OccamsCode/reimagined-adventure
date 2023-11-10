@@ -31,13 +31,13 @@ final class TubeStatusViewModelTests: XCTestCase {
         XCTAssertEqual(result, 0)
     }
     
-    func testLoadingStateLoading_numberOfSections_isTen() {
+    func testLoadingStateLoading_numberOfSections_isOne() {
         
         sut = TubeStatusViewModel(respository, loadingState: .loading)
         
         let result = sut.numberOfSections
         
-        XCTAssertEqual(result, 10)
+        XCTAssertEqual(result, 1)
     }
     
     func testLoadingStateFailed_numberOfSections_isZero() {
