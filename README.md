@@ -25,11 +25,11 @@ To insert your own App Key;
 APP_KEY = custom_app_key
 ```
 
-1. [How to build the code](how-to-build-code)
-2. [How to run the output](how-to-run-the-output)
-3. [How the run the tests](how-to-run-the-tests)
-4. [Assumptions made](assumptions-made)
-5. [Anything else](anything-else)
+1. [How to build the code](#how-to-build-code)
+2. [How to run the output](#how-to-run-the-output)
+3. [How the run the tests](#how-to-run-the-tests)
+4. [Assumptions made](#assumptions-made)
+5. [Anything else](#anything-else)
 
 ### How to build the code
  - Clone the repository
