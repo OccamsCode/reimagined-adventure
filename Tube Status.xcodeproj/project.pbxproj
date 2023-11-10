@@ -10,6 +10,7 @@
 		BA75F1952AFD2F8700D30FF3 /* TubeLineColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75F1942AFD2F8700D30FF3 /* TubeLineColorTests.swift */; };
 		BA75F1982AFD3E0E00D30FF3 /* AccessibilityGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75F1972AFD3E0E00D30FF3 /* AccessibilityGenerator.swift */; };
 		BA75F19A2AFD3E2700D30FF3 /* AccessibilityGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75F1992AFD3E2700D30FF3 /* AccessibilityGeneratorTests.swift */; };
+		BA75F19C2AFE4F5D00D30FF3 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75F19B2AFE4F5D00D30FF3 /* LoadingState.swift */; };
 		BA8A1D5E2AFA94F900DE7D09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1D5D2AFA94F900DE7D09 /* AppDelegate.swift */; };
 		BA8A1D602AFA94F900DE7D09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A1D5F2AFA94F900DE7D09 /* SceneDelegate.swift */; };
 		BA8A1D672AFA94FC00DE7D09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA8A1D662AFA94FC00DE7D09 /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 		BA75F1942AFD2F8700D30FF3 /* TubeLineColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeLineColorTests.swift; sourceTree = "<group>"; };
 		BA75F1972AFD3E0E00D30FF3 /* AccessibilityGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityGenerator.swift; sourceTree = "<group>"; };
 		BA75F1992AFD3E2700D30FF3 /* AccessibilityGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityGeneratorTests.swift; sourceTree = "<group>"; };
+		BA75F19B2AFE4F5D00D30FF3 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
 		BA8A1D5A2AFA94F900DE7D09 /* Tube Status.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tube Status.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8A1D5D2AFA94F900DE7D09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA8A1D5F2AFA94F900DE7D09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 			children = (
 				BA8A1DF92AFD0AFA00DE7D09 /* TableViewCellReusable */,
 				BA8A1DB22AFBBD1300DE7D09 /* Injection */,
+				BA75F19B2AFE4F5D00D30FF3 /* LoadingState.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -580,6 +583,7 @@
 				BA8A1DE42AFBFC9C00DE7D09 /* TubeStatusViewModel.swift in Sources */,
 				BA8A1DA42AFBACCB00DE7D09 /* DomainMapper.swift in Sources */,
 				BA8A1DF72AFD071400DE7D09 /* TubeStatusTableViewCell.swift in Sources */,
+				BA75F19C2AFE4F5D00D30FF3 /* LoadingState.swift in Sources */,
 				BA8A1DC72AFBE17B00DE7D09 /* Coordinator.swift in Sources */,
 				BA8A1D5E2AFA94F900DE7D09 /* AppDelegate.swift in Sources */,
 				BA8A1DE22AFBFC3A00DE7D09 /* TubeStatusTableViewController.swift in Sources */,

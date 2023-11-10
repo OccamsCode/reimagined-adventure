@@ -12,11 +12,13 @@ import Poppify
 final class TubeStatusViewModel {
     
     let repository: TubeStatusRepositoryProtocol
+    private (set) var loadingState: LoadingState
     private var lineDetails: [LineDetails]
     
-    init(_ repository: TubeStatusRepositoryProtocol) {
+    init(_ repository: TubeStatusRepositoryProtocol, loadingState: LoadingState = .idle) {
         self.repository = repository
         self.lineDetails = []
+        self.loadingState = loadingState
     }
     
     func fetchAllStatus(_ completion: @escaping () -> Void) {
